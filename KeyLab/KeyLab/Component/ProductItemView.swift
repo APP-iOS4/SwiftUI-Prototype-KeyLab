@@ -15,7 +15,7 @@ struct ProductItemView: View {
             Image(systemName: "photo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .foregroundStyle(.blue)
+                .foregroundStyle(.gray.opacity(0.7))
                 .padding(8)
             
             Text(product.name)

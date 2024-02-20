@@ -11,7 +11,13 @@ import SwiftUI
 struct KeyLabApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let isLogin = false
+            
+            if isLogin {
+                KeyLabTabView()
+            } else {
+                OnBoardingPagingView()
+            }
         }
     }
 }

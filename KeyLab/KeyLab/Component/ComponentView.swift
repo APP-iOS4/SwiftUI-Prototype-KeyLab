@@ -11,46 +11,48 @@ struct ComponentView: View {
     @State private var productList: [Product] = Product.mockData
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text("부품")
-                    .font(.largeTitle)
-                
-                Spacer()
-                
-                Button("", systemImage: "cart") {
-                    // TODO: 장바구니 이동
-                }
-            }
-            .padding(.horizontal, 16)
-            
+        NavigationView {
             ScrollView {
-                VStack(alignment: .leading) {
-                    Text("키보드 구성")
-                    
+                VStack {
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
-                            .fill(.blue)
+                            .fill(Color(red: 255/255, green: 154/255, blue: 105/255))
                         
                         Text("여기에 커스텀 키보드 구성 사진")
+                            .foregroundStyle(.white)
+                    }
+                    .frame(height: 200)
+                    .padding(.horizontal, 16)
+                    
+                    LazyVGrid(
+                        columns: [GridItem(.flexible()), GridItem(.flexible())],
+                        spacing: 16,
+                        pinnedViews: .sectionHeaders
+                    ) {
+                        Section {
+                            ForEach(productList) { product in
+                                ProductItemView(product: product)
+                            }
+                            
+                        } header: {
+                            CategoryBadgeListView(categoryList: categoryMockData)
+                        }
                     }
                 }
-                .frame(height: 200)
-                .padding(.horizontal, 16)
+                .padding(.top, 16)
+            }
+            .clipped()
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("부품")
+                        .font(.largeTitle)
+                }
                 
-                LazyVGrid(
-                    columns: [GridItem(.flexible()), GridItem(.flexible())],
-                    spacing: 16,
-                    pinnedViews: .sectionHeaders
-                ) {
-                    Section {
-                        ForEach(productList) { product in
-                            ProductItemView(product: product)
-                        }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("", systemImage: "cart") {
                         
-                    } header: {
-                        CategoryBadgeListView(categoryList: [])
                     }
+                    .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
                 }
             }
         }

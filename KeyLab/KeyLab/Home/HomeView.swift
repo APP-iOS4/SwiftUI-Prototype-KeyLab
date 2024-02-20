@@ -8,29 +8,33 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Binding var tabViewIndex: Int
     @State private var tipPageIndex: Int = 1
     
     var body: some View {
-        ScrollView {
-            LazyVStack(spacing: 36, pinnedViews: .sectionHeaders) {
-                Section {
+        NavigationView {
+            ScrollView {
+                LazyVStack(spacing: 36) {
                     HStack {
                         Button {
                             // TODO: TabBar Paging
+                            tabViewIndex = 2
                         } label: {
                             VStack {
                                 Image(systemName: "cpu")
                                 Text("조립")
                             }
                         }
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 180)
-                        .tint(Color(red: 1, green: 1, blue: 0))
-                        .background(.gray)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .frame(maxWidth: .infinity, minHeight: 180)
+                        .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color(red: 255/255, green: 154/255, blue: 105/255))
+                        }
                         
                         Button {
                             // TODO: TabBar Paging
+                            tabViewIndex = 3
                         } label: {
                             VStack {
                                 Image(systemName: "cpu")
@@ -39,8 +43,11 @@ struct HomeView: View {
                         }
                         .frame(maxWidth: .infinity)
                         .frame(height: 180)
-                        .background(.gray)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color(red: 255/255, green: 154/255, blue: 105/255))
+                        }
                     }
                     .padding(.horizontal, 16)
                     
@@ -70,7 +77,6 @@ struct HomeView: View {
                             }
                     }
                     
-                    
                     VStack(alignment: .leading) {
                         Text("후기 Top 10")
                             .font(.title)
@@ -86,80 +92,29 @@ struct HomeView: View {
                         
                         ProductDoubleLineGridView()
                     }
-                } header: {
-                    VStack(spacing: 8) {
-                        HStack {
-                            Text("KeyLab")
-                                .font(.largeTitle)
-                            
-                            Spacer()
-                            
-                            Button("", systemImage: "cart") {
-                                
-                            }
-                            .tint(.accentColor)
-                        }
-                        .padding(.horizontal, 16)
+                    
+                }
+                .padding(.top, 8)
+            }
+            .clipped()
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("KeyLab")
+                        .font(.largeTitle)
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("", systemImage: "cart") {
                         
-                        Rectangle()
-                            .frame(height: 0.3)
                     }
-                    .background()
+                    .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
                 }
             }
         }
-        .clipped()
     }
 }
+
 
 #Preview {
-    HomeView()
-}
-
-struct ReviewHorizontalScrollView: View {
-    var body: some View {
-        ScrollView(.horizontal) {
-            LazyHStack {
-                ForEach(1...5, id: \.self) { index in
-                    VStack(alignment: .leading) {
-                        Text("후기 \(index)")
-                        Text("gooooooooooooooooooood")
-                    }
-                    .padding()
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(lineWidth: 0.3)
-                    }
-                }
-            }
-            .padding(.horizontal, 16)
-        }
-        .scrollIndicators(.hidden)
-    }
-}
-
-struct ProductDoubleLineGridView: View {
-    var body: some View {
-        ScrollView(.horizontal) {
-            LazyHGrid(rows: [GridItem(), GridItem()], spacing: 16) {
-                ForEach(1...10, id: \.self) { index in
-                    VStack {
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(.blue)
-                            .frame(height: 80)
-                        Text("조합 \(index)")
-                        Text("트렌디한 감성의 어쩌구")
-                    }
-                    .frame(maxWidth: 200)
-                    .padding()
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(lineWidth: 0.3)
-                    }
-                }
-            }
-            .padding(.horizontal, 16)
-        }
-        .scrollIndicators(.hidden)
-    }
+    HomeView(tabViewIndex: .constant(1))
 }

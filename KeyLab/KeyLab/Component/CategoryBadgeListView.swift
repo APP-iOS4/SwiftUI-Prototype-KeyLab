@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-fileprivate let categoryMockData: [String] = [
+let categoryMockData: [String] = [
     "노브",
     "노브 엔코더",
     "하우징",
@@ -36,7 +36,7 @@ struct CategoryBadgeListView: View {
                             .foregroundStyle(.white)
                             .padding(8)
                     }
-                    .background(.blue)
+                    .background(Color(red: 255/255, green: 154/255, blue: 105/255))
                     .clipShape(RoundedRectangle(cornerRadius: 40))
                 }
             }
