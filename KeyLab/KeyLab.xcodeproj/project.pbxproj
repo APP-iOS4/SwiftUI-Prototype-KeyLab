@@ -11,17 +11,6 @@
 		097E725F2B84292300DDA747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E725E2B84292300DDA747 /* ContentView.swift */; };
 		097E72612B84292500DDA747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72602B84292500DDA747 /* Assets.xcassets */; };
 		097E72652B84292500DDA747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72642B84292500DDA747 /* Preview Assets.xcassets */; };
-
-		097E726D2B842CDF00DDA747 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E726C2B842CDF00DDA747 /* OnboardingView.swift */; };
-		097E727B2B8466D000DDA747 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 097E727A2B8466D000DDA747 /* File */; };
-		097E727D2B846CE600DDA747 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E727C2B846CE600DDA747 /* LoginView.swift */; };
-		097E727F2B84816D00DDA747 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E727E2B84816D00DDA747 /* SignUpView.swift */; };
-		097E72812B848DDB00DDA747 /* OnBoardingPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72802B848DDB00DDA747 /* OnBoardingPagingView.swift */; };
-		097E72832B8490AA00DDA747 /* FirstOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72822B8490AA00DDA747 /* FirstOnboardingView.swift */; };
-		097E72852B8490CA00DDA747 /* SecondOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72842B8490CA00DDA747 /* SecondOnboardingView.swift */; };
-		097E72872B8490F600DDA747 /* ThridOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72862B8490F600DDA747 /* ThridOnboardingView.swift */; };
-		097E72892B84910200DDA747 /* FourthOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72882B84910200DDA747 /* FourthOnboardingView.swift */; };
-
 		FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645D2B84319A0064059B /* AssemblyTotalView.swift */; };
 		FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */; };
 		FE8164652B8439C90064059B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8164642B8439C90064059B /* ProductCell.swift */; };
@@ -30,7 +19,6 @@
 		FE81646C2B8449500064059B /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81646B2B8449500064059B /* CartCell.swift */; };
 		FE81646E2B8469DD0064059B /* AssemblyCategoryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81646D2B8469DD0064059B /* AssemblyCategoryBar.swift */; };
 		FE8164702B848B540064059B /* ProductFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81646F2B848B540064059B /* ProductFilter.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,17 +28,6 @@
 		097E72602B84292500DDA747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097E72622B84292500DDA747 /* KeyLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyLab.entitlements; sourceTree = "<group>"; };
 		097E72642B84292500DDA747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-
-		097E726C2B842CDF00DDA747 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		097E727A2B8466D000DDA747 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
-		097E727C2B846CE600DDA747 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		097E727E2B84816D00DDA747 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		097E72802B848DDB00DDA747 /* OnBoardingPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPagingView.swift; sourceTree = "<group>"; };
-		097E72822B8490AA00DDA747 /* FirstOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingView.swift; sourceTree = "<group>"; };
-		097E72842B8490CA00DDA747 /* SecondOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingView.swift; sourceTree = "<group>"; };
-		097E72862B8490F600DDA747 /* ThridOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThridOnboardingView.swift; sourceTree = "<group>"; };
-		097E72882B84910200DDA747 /* FourthOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthOnboardingView.swift; sourceTree = "<group>"; };
-
 		FE81645D2B84319A0064059B /* AssemblyTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyTotalView.swift; sourceTree = "<group>"; };
 		FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyProgressView.swift; sourceTree = "<group>"; };
 		FE8164642B8439C90064059B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -59,7 +36,6 @@
 		FE81646B2B8449500064059B /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		FE81646D2B8469DD0064059B /* AssemblyCategoryBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyCategoryBar.swift; sourceTree = "<group>"; };
 		FE81646F2B848B540064059B /* ProductFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFilter.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,18 +68,13 @@
 		097E725B2B84292300DDA747 /* KeyLab */ = {
 			isa = PBXGroup;
 			children = (
-
-				097E726B2B842B8900DDA747 /* InitialPages */,
-
 				FE81646A2B84487A0064059B /* Cart */,
 				FE81645C2B842BEE0064059B /* Assembly */,
-
 				097E725C2B84292300DDA747 /* KeyLabApp.swift */,
 				097E725E2B84292300DDA747 /* ContentView.swift */,
 				097E72602B84292500DDA747 /* Assets.xcassets */,
 				097E72622B84292500DDA747 /* KeyLab.entitlements */,
 				097E72632B84292500DDA747 /* Preview Content */,
-				097E727A2B8466D000DDA747 /* File */,
 			);
 			path = KeyLab;
 			sourceTree = "<group>";
@@ -116,21 +87,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-
-		097E726B2B842B8900DDA747 /* InitialPages */ = {
-			isa = PBXGroup;
-			children = (
-				097E726C2B842CDF00DDA747 /* OnboardingView.swift */,
-				097E727C2B846CE600DDA747 /* LoginView.swift */,
-				097E727E2B84816D00DDA747 /* SignUpView.swift */,
-				097E72802B848DDB00DDA747 /* OnBoardingPagingView.swift */,
-				097E72822B8490AA00DDA747 /* FirstOnboardingView.swift */,
-				097E72842B8490CA00DDA747 /* SecondOnboardingView.swift */,
-				097E72862B8490F600DDA747 /* ThridOnboardingView.swift */,
-				097E72882B84910200DDA747 /* FourthOnboardingView.swift */,
-			);
-			path = InitialPages;
-
 		FE81645C2B842BEE0064059B /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +107,6 @@
 				FE81646B2B8449500064059B /* CartCell.swift */,
 			);
 			path = Cart;
-
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +169,6 @@
 			files = (
 				097E72652B84292500DDA747 /* Preview Assets.xcassets in Resources */,
 				097E72612B84292500DDA747 /* Assets.xcassets in Resources */,
-				097E727B2B8466D000DDA747 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,10 +179,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				097E72892B84910200DDA747 /* FourthOnboardingView.swift in Sources */,
-				097E726D2B842CDF00DDA747 /* OnboardingView.swift in Sources */,
-
 				FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */,
 				FE8164702B848B540064059B /* ProductFilter.swift in Sources */,
 				FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */,
@@ -236,14 +186,7 @@
 				FE81646C2B8449500064059B /* CartCell.swift in Sources */,
 				FE8164692B8444D50064059B /* AssemblyCartView.swift in Sources */,
 				FE8164672B843BD50064059B /* ProductList.swift in Sources */,
-
 				097E725F2B84292300DDA747 /* ContentView.swift in Sources */,
-				097E72832B8490AA00DDA747 /* FirstOnboardingView.swift in Sources */,
-				097E72852B8490CA00DDA747 /* SecondOnboardingView.swift in Sources */,
-				097E72872B8490F600DDA747 /* ThridOnboardingView.swift in Sources */,
-				097E727D2B846CE600DDA747 /* LoginView.swift in Sources */,
-				097E727F2B84816D00DDA747 /* SignUpView.swift in Sources */,
-				097E72812B848DDB00DDA747 /* OnBoardingPagingView.swift in Sources */,
 				097E725D2B84292300DDA747 /* KeyLabApp.swift in Sources */,
 				FE81646E2B8469DD0064059B /* AssemblyCategoryBar.swift in Sources */,
 			);
