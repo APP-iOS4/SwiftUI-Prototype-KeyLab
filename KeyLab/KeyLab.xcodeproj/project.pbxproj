@@ -11,6 +11,14 @@
 		097E725F2B84292300DDA747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E725E2B84292300DDA747 /* ContentView.swift */; };
 		097E72612B84292500DDA747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72602B84292500DDA747 /* Assets.xcassets */; };
 		097E72652B84292500DDA747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72642B84292500DDA747 /* Preview Assets.xcassets */; };
+		097E72962B849E3D00DDA747 /* OnBoardingPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E728E2B849E3D00DDA747 /* OnBoardingPagingView.swift */; };
+		097E72972B849E3D00DDA747 /* SecondOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E728F2B849E3D00DDA747 /* SecondOnboardingView.swift */; };
+		097E72982B849E3D00DDA747 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72902B849E3D00DDA747 /* LoginView.swift */; };
+		097E72992B849E3D00DDA747 /* FourthOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72912B849E3D00DDA747 /* FourthOnboardingView.swift */; };
+		097E729A2B849E3D00DDA747 /* FirstOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72922B849E3D00DDA747 /* FirstOnboardingView.swift */; };
+		097E729B2B849E3D00DDA747 /* ThridOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72932B849E3D00DDA747 /* ThridOnboardingView.swift */; };
+		097E729C2B849E3D00DDA747 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72942B849E3D00DDA747 /* SignUpView.swift */; };
+		097E729D2B849E3D00DDA747 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72952B849E3D00DDA747 /* OnboardingView.swift */; };
 		FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645D2B84319A0064059B /* AssemblyTotalView.swift */; };
 		FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */; };
 		FE8164652B8439C90064059B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8164642B8439C90064059B /* ProductCell.swift */; };
@@ -28,6 +36,14 @@
 		097E72602B84292500DDA747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097E72622B84292500DDA747 /* KeyLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyLab.entitlements; sourceTree = "<group>"; };
 		097E72642B84292500DDA747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		097E728E2B849E3D00DDA747 /* OnBoardingPagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPagingView.swift; sourceTree = "<group>"; };
+		097E728F2B849E3D00DDA747 /* SecondOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondOnboardingView.swift; sourceTree = "<group>"; };
+		097E72902B849E3D00DDA747 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		097E72912B849E3D00DDA747 /* FourthOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthOnboardingView.swift; sourceTree = "<group>"; };
+		097E72922B849E3D00DDA747 /* FirstOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstOnboardingView.swift; sourceTree = "<group>"; };
+		097E72932B849E3D00DDA747 /* ThridOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThridOnboardingView.swift; sourceTree = "<group>"; };
+		097E72942B849E3D00DDA747 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		097E72952B849E3D00DDA747 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FE81645D2B84319A0064059B /* AssemblyTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyTotalView.swift; sourceTree = "<group>"; };
 		FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyProgressView.swift; sourceTree = "<group>"; };
 		FE8164642B8439C90064059B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -68,6 +84,7 @@
 		097E725B2B84292300DDA747 /* KeyLab */ = {
 			isa = PBXGroup;
 			children = (
+				097E728D2B849E3D00DDA747 /* InitialPages */,
 				FE81646A2B84487A0064059B /* Cart */,
 				FE81645C2B842BEE0064059B /* Assembly */,
 				097E725C2B84292300DDA747 /* KeyLabApp.swift */,
@@ -85,6 +102,21 @@
 				097E72642B84292500DDA747 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		097E728D2B849E3D00DDA747 /* InitialPages */ = {
+			isa = PBXGroup;
+			children = (
+				097E728E2B849E3D00DDA747 /* OnBoardingPagingView.swift */,
+				097E728F2B849E3D00DDA747 /* SecondOnboardingView.swift */,
+				097E72902B849E3D00DDA747 /* LoginView.swift */,
+				097E72912B849E3D00DDA747 /* FourthOnboardingView.swift */,
+				097E72922B849E3D00DDA747 /* FirstOnboardingView.swift */,
+				097E72932B849E3D00DDA747 /* ThridOnboardingView.swift */,
+				097E72942B849E3D00DDA747 /* SignUpView.swift */,
+				097E72952B849E3D00DDA747 /* OnboardingView.swift */,
+			);
+			path = InitialPages;
 			sourceTree = "<group>";
 		};
 		FE81645C2B842BEE0064059B /* Assembly */ = {
@@ -181,12 +213,20 @@
 			files = (
 				FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */,
 				FE8164702B848B540064059B /* ProductFilter.swift in Sources */,
+				097E729A2B849E3D00DDA747 /* FirstOnboardingView.swift in Sources */,
+				097E729D2B849E3D00DDA747 /* OnboardingView.swift in Sources */,
 				FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */,
+				097E72992B849E3D00DDA747 /* FourthOnboardingView.swift in Sources */,
+				097E72962B849E3D00DDA747 /* OnBoardingPagingView.swift in Sources */,
 				FE8164652B8439C90064059B /* ProductCell.swift in Sources */,
 				FE81646C2B8449500064059B /* CartCell.swift in Sources */,
 				FE8164692B8444D50064059B /* AssemblyCartView.swift in Sources */,
+				097E72972B849E3D00DDA747 /* SecondOnboardingView.swift in Sources */,
 				FE8164672B843BD50064059B /* ProductList.swift in Sources */,
 				097E725F2B84292300DDA747 /* ContentView.swift in Sources */,
+				097E729C2B849E3D00DDA747 /* SignUpView.swift in Sources */,
+				097E72982B849E3D00DDA747 /* LoginView.swift in Sources */,
+				097E729B2B849E3D00DDA747 /* ThridOnboardingView.swift in Sources */,
 				097E725D2B84292300DDA747 /* KeyLabApp.swift in Sources */,
 				FE81646E2B8469DD0064059B /* AssemblyCategoryBar.swift in Sources */,
 			);
