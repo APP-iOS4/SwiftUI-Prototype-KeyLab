@@ -12,7 +12,7 @@ struct SignUpView: View {
     @State private var pwLabel: String = ""
     @FocusState private var isFocusedID: Bool
     @FocusState private var isFocusedPW: Bool
-    
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationStack {
@@ -44,8 +44,8 @@ struct SignUpView: View {
             
             
             VStack {
-                NavigationLink {
-                    
+                Button {
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("완료")
                         .font(.title2)
@@ -57,7 +57,6 @@ struct SignUpView: View {
                 .clipShape(Capsule())
                 .foregroundStyle(.white)
                 .padding(EdgeInsets(top: 20, leading: 30, bottom: 0, trailing: 30))
-                
                 
                 Divider()
                     .padding()

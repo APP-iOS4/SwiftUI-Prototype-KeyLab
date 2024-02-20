@@ -22,47 +22,48 @@ struct OnboardingView: View {
     
     var body: some View {
         
-        VStack {
-            Spacer(minLength: 110)
-            GeometryReader { geometry in
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 0) {
-                        ForEach(0..<4) { index in
-                            Image("onboarding\(index)")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: geometry.size.width)
+        NavigationStack {
+            VStack {
+                Spacer(minLength: 110)
+                GeometryReader { geometry in
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 0) {
+                            ForEach(0..<4) { index in
+                                Image("onboarding\(index)")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: geometry.size.width)
+                            }
                         }
                     }
+                    .scrollTargetBehavior(.paging)
                 }
-                .scrollTargetBehavior(.paging)
             }
-        }
-        
-        VStack {
-            Spacer()
             
-            Text("\(onBoardingStrings[0])")
-                .font(.title)
-                .fontWeight(.semibold)
-            Spacer()
-            PageControl(numberOfPages: 4, currentPage: $currentPageNum)
-            
-            NavigationStack {
+            VStack {
+                Spacer()
+                
+                Text("\(onBoardingStrings[0])")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                Spacer()
+                PageControl(numberOfPages: 4, currentPage: $currentPageNum)
+                
+                
                 VStack {
                     NavigationLink(destination: LoginView()) {
-//                        
-//                        Button {
-//
-//                        } label: {
-//                            Text("로그인")
-//                                .font(.title)
-//                                .padding()
-//                                .frame(maxWidth: .infinity)
-//                        }
-//                        .buttonStyle(.borderedProminent)
-//                        .tint(.mainorange)
-//                        .padding()
+                        
+                        Button {
+                            
+                        } label: {
+                            Text("로그인")
+                                .font(.title)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .tint(.mainorange)
+                        .padding()
                     }
                 }
                 
