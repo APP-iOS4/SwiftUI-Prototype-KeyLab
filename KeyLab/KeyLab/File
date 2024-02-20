@@ -1,0 +1,33 @@
+
+struct ContentView: View {
+    @State private var currentPage = 0
+
+    var body: some View {
+        GeometryReader { geometry in
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 0) {
+                    ForEach(0..<4) { index in
+                        Image("onboarding\(index)")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: geometry.size.width)
+                    }
+                }
+                .frame(width: geometry.size.width * CGFloat(4))
+                .offset(x: -CGFloat(currentPage) * geometry.size.width, y: 0)
+                .animation(.easeInOut)
+            }
+            .content.offset(x: CGFloat(currentPage) * geometry.size.width)
+            .scrollTargetBehavior(.paging)
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+            UIScrollView.appearance().isPagingEnabled = true
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didEnterBackgroundNotification)) { _ in
+            UIScrollView.appearance().isPagingEnabled = false
+        }
+        .onChange(of: currentPage) { newValue in
+            print("Current page: \(newValue)")
+        }
+    }
+}

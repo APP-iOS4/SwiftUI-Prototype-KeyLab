@@ -11,6 +11,11 @@
 		097E725F2B84292300DDA747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E725E2B84292300DDA747 /* ContentView.swift */; };
 		097E72612B84292500DDA747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72602B84292500DDA747 /* Assets.xcassets */; };
 		097E72652B84292500DDA747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72642B84292500DDA747 /* Preview Assets.xcassets */; };
+		097E726D2B842CDF00DDA747 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E726C2B842CDF00DDA747 /* OnboardingView.swift */; };
+		097E72792B843BD900DDA747 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72782B843BD900DDA747 /* PageControl.swift */; };
+		097E727B2B8466D000DDA747 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 097E727A2B8466D000DDA747 /* File */; };
+		097E727D2B846CE600DDA747 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E727C2B846CE600DDA747 /* LoginView.swift */; };
+		097E727F2B84816D00DDA747 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E727E2B84816D00DDA747 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		097E72602B84292500DDA747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097E72622B84292500DDA747 /* KeyLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyLab.entitlements; sourceTree = "<group>"; };
 		097E72642B84292500DDA747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		097E726C2B842CDF00DDA747 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		097E72782B843BD900DDA747 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		097E727A2B8466D000DDA747 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		097E727C2B846CE600DDA747 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		097E727E2B84816D00DDA747 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +62,13 @@
 		097E725B2B84292300DDA747 /* KeyLab */ = {
 			isa = PBXGroup;
 			children = (
+				097E726B2B842B8900DDA747 /* InitialPages */,
 				097E725C2B84292300DDA747 /* KeyLabApp.swift */,
 				097E725E2B84292300DDA747 /* ContentView.swift */,
 				097E72602B84292500DDA747 /* Assets.xcassets */,
 				097E72622B84292500DDA747 /* KeyLab.entitlements */,
 				097E72632B84292500DDA747 /* Preview Content */,
+				097E727A2B8466D000DDA747 /* File */,
 			);
 			path = KeyLab;
 			sourceTree = "<group>";
@@ -67,6 +79,17 @@
 				097E72642B84292500DDA747 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		097E726B2B842B8900DDA747 /* InitialPages */ = {
+			isa = PBXGroup;
+			children = (
+				097E726C2B842CDF00DDA747 /* OnboardingView.swift */,
+				097E727C2B846CE600DDA747 /* LoginView.swift */,
+				097E727E2B84816D00DDA747 /* SignUpView.swift */,
+				097E72782B843BD900DDA747 /* PageControl.swift */,
+			);
+			path = InitialPages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +152,7 @@
 			files = (
 				097E72652B84292500DDA747 /* Preview Assets.xcassets in Resources */,
 				097E72612B84292500DDA747 /* Assets.xcassets in Resources */,
+				097E727B2B8466D000DDA747 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				097E726D2B842CDF00DDA747 /* OnboardingView.swift in Sources */,
 				097E725F2B84292300DDA747 /* ContentView.swift in Sources */,
+				097E72792B843BD900DDA747 /* PageControl.swift in Sources */,
+				097E727D2B846CE600DDA747 /* LoginView.swift in Sources */,
+				097E727F2B84816D00DDA747 /* SignUpView.swift in Sources */,
 				097E725D2B84292300DDA747 /* KeyLabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
