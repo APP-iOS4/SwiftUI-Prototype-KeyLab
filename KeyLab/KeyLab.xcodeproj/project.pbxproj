@@ -11,6 +11,7 @@
 		097E725F2B84292300DDA747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E725E2B84292300DDA747 /* ContentView.swift */; };
 		097E72612B84292500DDA747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72602B84292500DDA747 /* Assets.xcassets */; };
 		097E72652B84292500DDA747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72642B84292500DDA747 /* Preview Assets.xcassets */; };
+		138A14932B842BFC00EB67F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14922B842BFC00EB67F6 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		097E72602B84292500DDA747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097E72622B84292500DDA747 /* KeyLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyLab.entitlements; sourceTree = "<group>"; };
 		097E72642B84292500DDA747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		138A14922B842BFC00EB67F6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		097E725B2B84292300DDA747 /* KeyLab */ = {
 			isa = PBXGroup;
 			children = (
+				138A14912B842BF000EB67F6 /* Home */,
 				097E725C2B84292300DDA747 /* KeyLabApp.swift */,
 				097E725E2B84292300DDA747 /* ContentView.swift */,
 				097E72602B84292500DDA747 /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				097E72642B84292500DDA747 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		138A14912B842BF000EB67F6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				138A14922B842BFC00EB67F6 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138A14932B842BFC00EB67F6 /* HomeView.swift in Sources */,
 				097E725F2B84292300DDA747 /* ContentView.swift in Sources */,
 				097E725D2B84292300DDA747 /* KeyLabApp.swift in Sources */,
 			);
