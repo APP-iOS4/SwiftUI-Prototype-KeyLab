@@ -25,29 +25,33 @@ struct OnboardingView: View {
         NavigationStack {
             VStack {
                 Spacer(minLength: 110)
-                GeometryReader { geometry in
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 0) {
-                            ForEach(0..<4) { index in
-                                Image("onboarding\(index)")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: geometry.size.width)
-                            }
-                        }
+//                GeometryReader { geometry in
+//                    ScrollView(.horizontal, showsIndicators: false) {
+//                        HStack(spacing: 0) {
+//                            ForEach(0..<4) { index in
+//                                Image("onboarding\(index)")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .frame(width: geometry.size.width)
+//                            }
+//                        }
+//                    }
+//                    .scrollTargetBehavior(.paging)
+//                }
+                OnBoardingPagingView()
+                    .onAppear{
+                        setUpAppearance()
                     }
-                    .scrollTargetBehavior(.paging)
-                }
             }
             
             VStack {
-                Spacer()
                 
-                Text("\(onBoardingStrings[0])")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                Spacer()
-                PageControl(numberOfPages: 4, currentPage: $currentPageNum)
+                
+//                Text("\(onBoardingStrings[0])")
+//                    .font(.title)
+//                    .fontWeight(.semibold)
+//                Spacer()
+//                PageControl(numberOfPages: 4, currentPage: $currentPageNum)
                 
                 
                 VStack {
@@ -62,6 +66,7 @@ struct OnboardingView: View {
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.borderedProminent)
+                        .clipShape(Capsule())
                         .tint(.mainorange)
                         .padding()
                     }
@@ -76,6 +81,7 @@ struct OnboardingView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .tint(.mainorange)
+                .clipShape(Capsule())
                 .padding()
             }
         }
@@ -92,6 +98,11 @@ struct OnboardingView: View {
         
         
         
+    }
+    
+    func setUpAppearance() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = .mainorange
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor.gray
     }
 }
 #Preview {
