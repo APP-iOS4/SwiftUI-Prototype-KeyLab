@@ -11,6 +11,14 @@
 		097E725F2B84292300DDA747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E725E2B84292300DDA747 /* ContentView.swift */; };
 		097E72612B84292500DDA747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72602B84292500DDA747 /* Assets.xcassets */; };
 		097E72652B84292500DDA747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72642B84292500DDA747 /* Preview Assets.xcassets */; };
+		FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645D2B84319A0064059B /* AssemblyTotalView.swift */; };
+		FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */; };
+		FE8164652B8439C90064059B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8164642B8439C90064059B /* ProductCell.swift */; };
+		FE8164672B843BD50064059B /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8164662B843BD50064059B /* ProductList.swift */; };
+		FE8164692B8444D50064059B /* AssemblyCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8164682B8444D50064059B /* AssemblyCartView.swift */; };
+		FE81646C2B8449500064059B /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81646B2B8449500064059B /* CartCell.swift */; };
+		FE81646E2B8469DD0064059B /* AssemblyCategoryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81646D2B8469DD0064059B /* AssemblyCategoryBar.swift */; };
+		FE8164702B848B540064059B /* ProductFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81646F2B848B540064059B /* ProductFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		097E72602B84292500DDA747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097E72622B84292500DDA747 /* KeyLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyLab.entitlements; sourceTree = "<group>"; };
 		097E72642B84292500DDA747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE81645D2B84319A0064059B /* AssemblyTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyTotalView.swift; sourceTree = "<group>"; };
+		FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyProgressView.swift; sourceTree = "<group>"; };
+		FE8164642B8439C90064059B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		FE8164662B843BD50064059B /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		FE8164682B8444D50064059B /* AssemblyCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyCartView.swift; sourceTree = "<group>"; };
+		FE81646B2B8449500064059B /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		FE81646D2B8469DD0064059B /* AssemblyCategoryBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyCategoryBar.swift; sourceTree = "<group>"; };
+		FE81646F2B848B540064059B /* ProductFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,8 @@
 		097E725B2B84292300DDA747 /* KeyLab */ = {
 			isa = PBXGroup;
 			children = (
+				FE81646A2B84487A0064059B /* Cart */,
+				FE81645C2B842BEE0064059B /* Assembly */,
 				097E725C2B84292300DDA747 /* KeyLabApp.swift */,
 				097E725E2B84292300DDA747 /* ContentView.swift */,
 				097E72602B84292500DDA747 /* Assets.xcassets */,
@@ -67,6 +85,28 @@
 				097E72642B84292500DDA747 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE81645C2B842BEE0064059B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FE81645D2B84319A0064059B /* AssemblyTotalView.swift */,
+				FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */,
+				FE8164642B8439C90064059B /* ProductCell.swift */,
+				FE8164662B843BD50064059B /* ProductList.swift */,
+				FE81646D2B8469DD0064059B /* AssemblyCategoryBar.swift */,
+				FE81646F2B848B540064059B /* ProductFilter.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FE81646A2B84487A0064059B /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				FE8164682B8444D50064059B /* AssemblyCartView.swift */,
+				FE81646B2B8449500064059B /* CartCell.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +179,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */,
+				FE8164702B848B540064059B /* ProductFilter.swift in Sources */,
+				FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */,
+				FE8164652B8439C90064059B /* ProductCell.swift in Sources */,
+				FE81646C2B8449500064059B /* CartCell.swift in Sources */,
+				FE8164692B8444D50064059B /* AssemblyCartView.swift in Sources */,
+				FE8164672B843BD50064059B /* ProductList.swift in Sources */,
 				097E725F2B84292300DDA747 /* ContentView.swift in Sources */,
 				097E725D2B84292300DDA747 /* KeyLabApp.swift in Sources */,
+				FE81646E2B8469DD0064059B /* AssemblyCategoryBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +326,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -314,6 +363,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
