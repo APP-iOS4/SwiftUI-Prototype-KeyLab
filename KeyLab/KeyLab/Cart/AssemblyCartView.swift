@@ -9,7 +9,11 @@ import SwiftUI
 
 struct AssemblyCartView: View {
     @Binding var isShowingCartSheet: Bool
+    @Binding var progressCount: Int
+    
     @State private var isShowingCartAlert: Bool = false
+    @State private var isShowingCartOKAlert: Bool = false
+    
 
     var body: some View {
         NavigationStack{
@@ -23,7 +27,7 @@ struct AssemblyCartView: View {
                     })
                 }.padding()
                 ScrollView{
-                    ForEach((1...12),id: \.self){ _ in
+                    ForEach((1...10),id: \.self){ index in
                         CartCell()
                         Divider()
                     }
@@ -39,7 +43,8 @@ struct AssemblyCartView: View {
             .alert("장바구니에 추가하시겠습니까?", isPresented: $isShowingCartAlert) {
                 
                 Button("OK", action: {
-                    print("추가되었습니다~")
+                    isShowingCartAlert.toggle()
+                    isShowingCartOKAlert.toggle()
                     //초기화하고 총 장바구니로 넘어가기
                 })
                 Button("Cancel", action: {
@@ -47,9 +52,21 @@ struct AssemblyCartView: View {
                     //초기화하고 총 장바구니로 넘어가기
                 })
             }
+            .alert("추가되었습니다", isPresented: $isShowingCartOKAlert) {
+                
+                Button("OK", action: {
+                    //초기화하고 총 장바구니로 넘어가기
+                    isShowingCartSheet.toggle()
+                    isShowingCartOKAlert.toggle()
+                    progressCount = 1
+                
+                    
+                })
+            }
     }
 }
 
 #Preview {
-    AssemblyCartView(isShowingCartSheet: .constant(true))
+    AssemblyCartView(isShowingCartSheet: .constant(true),
+                     progressCount : .constant(4))
 }

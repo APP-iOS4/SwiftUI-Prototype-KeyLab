@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AssemblyTotalView: View {
-    //enum으로 0 = 키캡 / 1 = 스위치 이런식으로 보이도록
     @State private var progressCount = 1
     @State private var sortString = "최신순"
     @State private var isShowingCartSheet: Bool = false
@@ -17,78 +16,96 @@ struct AssemblyTotalView: View {
     var body: some View {
         NavigationView{
             VStack{
-                //이 단계의 부품 이미지
-//                Spacer()
-//                Divider()
-                Image("assemblyMainImage").resizable().aspectRatio(contentMode: .fit).frame(height: 180)
+                AssemblyProgressView(progressCount: $progressCount).frame(height: 8)
+                
+                Text("\"\(categoryMockData[progressCount-1])\" 이미지 이렇게 저렇게 보여주기").frame(height: 150).border(.gray)
                 VStack{
-                    Text("But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born ").padding().frame(height: 100).background(Color(red: 255 / 255, green: 154 / 255, blue: 105 / 255).opacity(0.2))
+                    Text("\"\(categoryMockData[progressCount-1])\"는 이러쿵 저렁쿵 어쩌구 저쩌구해서 이렇게 저렇게 골라서 어절티비 저쩔티비 해야합니다. ").padding().frame(height: 100).background(Color.mainorange.opacity(0.2))
                 }.padding()
                 
-                //카테고리
-                
-                //
                 Divider()
                 HStack{
-                    AssemblyCategoryBar().frame(maxHeight: 20)
+                    AssemblyCategoryBar(progressCount : $progressCount).frame(maxHeight: 25)
+                    
                     Button(action: {
                         isShowingFilterSheet.toggle()
                     }, label: {
                         Text("\(sortString)").frame(minWidth: 100)
-                    }).foregroundColor(.orange).background(.blue)
+                    }).foregroundColor(.mainorange)
+                    
                 }.frame(maxHeight: 25)
-                //상품 쫘라락~
-                //상품 선택시 표시 0
-                
                 Divider()
-                //
-                ProductList().frame(height: 250)
                 
-                AssemblyProgressView(progressCount: $progressCount).frame(height: 5)
-                Spacer(minLength: 20)
-            }.navigationTitle("조립")
+                
+                
+                ProductList(progressCount: $progressCount).frame(height: 250)
+
+                HStack{
+                    Button(action: {
+                        if progressCount > 1{
+                            progressCount -= 1
+                        }else{
+                        }
+                    }, label: {
+                        if progressCount > 1 {
+                            HStack {
+                                Image(systemName: "arrowshape.left.fill")
+                                Text("이전")
+                            }
+                        }else {
+                            HStack {
+                                Image(systemName: "arrowshape.left.fill")
+                                Text("이전")
+                            }.hidden()
+                        }
+                    })
+                    Spacer()
+                    Text("\(progressCount) / 10")
+                    Spacer()
+                    Button(action: {
+                        if progressCount >= 10{
+                            isShowingCartSheet.toggle()
+                        }
+                        else{
+                            progressCount += 1
+                        }
+                    }, label: {
+                            if progressCount >= 10{
+                                HStack {
+                                    Text("카트")
+                                    Image(systemName: "cart")
+                                }
+                            }
+                            else{
+                                HStack {
+                                    Text("다음")
+                                    Image(systemName: "arrowshape.right.fill")
+                                }
+                            }
+                        
+                        
+                    })
+                }.padding()
+                
+            }
+            .navigationTitle("\(categoryMockData[progressCount-1])")
                 .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .status) {
-                        HStack{
-                            Button(action: {
-                                if progressCount > 1{
-                                    progressCount -= 1
-                                }else{
-                                    
-                                }
-                            }, label: {
-                                Label("이전", systemImage: "arrowshape.left.fill")
-                            })
-                            Spacer()
-                            Text("\(progressCount) / 12")
-                            Spacer()
-                            Button(action: {
-                                if progressCount >= 12{
-                                    isShowingCartSheet.toggle()
-                                }
-                                else{
-                                    progressCount += 1
-                                }
-                                print("nxt : \(progressCount)")
-                            }, label: {
-                                Label("다음", systemImage: "arrowshape.right.fill")
-                            })
-                        }.foregroundColor(Color(red: 255 / 255, green: 154 / 255, blue: 105 / 255))
-                }
-            }.sheet(isPresented: $isShowingCartSheet, content: {
-                AssemblyCartView(isShowingCartSheet : $isShowingCartSheet)
-            })
-            .sheet(isPresented: $isShowingFilterSheet, content: {
-                ProductFilter(isShowingFilterSheet : $isShowingFilterSheet, sortString: $sortString)
-            })
             
             
-        }
-//        .ignoresSafeArea(.all)
+            
+                .sheet(isPresented: $isShowingCartSheet, content: {
+                    AssemblyCartView(isShowingCartSheet : $isShowingCartSheet, progressCount : $progressCount)
+                })
+        
+                .sheet(isPresented: $isShowingFilterSheet, content: {
+                    ProductFilter(isShowingFilterSheet : $isShowingFilterSheet, sortString: $sortString)
+                })
+        }.foregroundColor(.mainorange)
     }
 }
 
 #Preview {
-    AssemblyTotalView()
+    TabView{
+        AssemblyTotalView()
+    }
 }
