@@ -50,6 +50,7 @@ struct HomeView: View {
                                 Image(systemName: "wrench.and.screwdriver.fill")
                                 Text("조립")
                             }
+                            .frame(maxWidth: .infinity)
                         }
                         .frame(maxWidth: .infinity, minHeight: 70)
                         .background(.mainorange)
@@ -63,6 +64,7 @@ struct HomeView: View {
                                 Image(systemName: "gearshape.2.fill")
                                 Text("부품")
                             }
+                            .frame(maxWidth: .infinity)
                         }
                         .frame(maxWidth: .infinity, minHeight: 70)
                         .background(.mainorange)

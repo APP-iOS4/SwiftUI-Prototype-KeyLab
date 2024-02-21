@@ -13,29 +13,62 @@ struct ProductCell: View {
     var buttonAction: (() -> ())?
     
     var body: some View {
-        VStack{
-            ZStack{
-                
-                Text("\(categoryMockData[progressCount-1])\n이미지").frame(width: 150, height: 200).border(Color.mainorange, width: 1)
-                Text("\n\n\n\n\n\n\n                         🧡")
-                if isSelected{
-                    Image(systemName: "checkmark")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 120, height: 120)
+        
+            VStack {
+                ZStack {
+                    VStack(alignment: .leading) {
+                        Image(systemName: "photo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundStyle(.gray)
+                            .padding(8)
+                        
+                        HStack {
+                            Spacer()
+                            
+                            Image(systemName: "heart")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 16, height: 16)
+                                .foregroundStyle(.red)
+                            
+                            Text("1,234")
+                                .font(.subheadline)
+                        }
+                        .padding([.horizontal, .bottom], 6)
+                        
+                        
+                        
+                    }
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color(.mainorange), lineWidth: 0.4)
+                    }
+                    .onTapGesture {
+                        buttonAction?()
+                    }
+                    .contextMenu(menuItems: {
+                        Text("상세보기_sheet")
+                        Text("찜하기")
+                    })
                     
+                    if isSelected{
+                        Image(systemName: "checkmark")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
                 }
-            }.onTapGesture {
-                buttonAction?()
+                
+                Text("[\(categoryMockData[progressCount-1])] 제품명")
+                    .font(.headline)
+                    .fontWeight(.medium)
+                
+                Text("39,800원")
+                    .padding([.horizontal, .bottom], 8)
+                    .font(.subheadline)
             }
-            .contextMenu(menuItems: {
-                Text("상세보기_sheet")
-                Text("찜하기")
-            })
-            
-            Text("[\(categoryMockData[progressCount-1])]제품명")
-
-        }.foregroundColor(.mainorange)
+        .foregroundColor(.mainorange)
+            .frame(width: 150, height: 200)
     }
 }
 

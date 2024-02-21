@@ -9,11 +9,28 @@ import SwiftUI
 
 struct ComponentView: View {
     @State private var productList: [Product] = Product.mockData
+    @State private var searchText: String = ""
     
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack {
+                    HStack(alignment: .center) {
+                        TextField("검색하기", text: $searchText)
+                        
+                        Button("", systemImage: "magnifyingglass") {
+                            
+                        }
+                        .tint(.mainorange)
+                    }
+                    .frame(height: 44)
+                    .padding(.horizontal, 8)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color(.gray).opacity(0.4))
+                    }
+                    .padding([.horizontal, .bottom], 16)
+                    
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color(.mainorange))
