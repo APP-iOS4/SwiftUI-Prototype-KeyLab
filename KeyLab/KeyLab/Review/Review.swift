@@ -11,17 +11,18 @@ struct Review: View {
     
     @State private var pressed = false
     
-    let texts = ["핑크핑크", "화이트", "블랙핑크", "레트로", "일렉트릭", "멋사", "일곱 번째", "여덟 번째", "아홉 번째", "열 번째"]
-    
     let gridItems = Array(repeating: GridItem(.flexible()), count: 2)
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(alignment: .center) {
+                Text("후기")
+                    .font(.largeTitle)
+                    .fontWeight(.medium)
                 HStack {
                     VStack {
-                        ScrollView(.horizontal) {
-                            HStack(spacing: -15 ) {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: -18 ) {
                                 ForEach(texts.indices, id: \.self) { index in
                                     Capsule()
                                         .fill(Color.orange)
@@ -91,13 +92,13 @@ struct Review: View {
                 }
                 Spacer()
             }
-            .navigationBarTitle("후기")
+//            .navigationBarTitle("후기")
+            
             
             
         }
     }
 }
-
 
 
 struct Review_Previews: PreviewProvider {
