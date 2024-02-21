@@ -18,8 +18,9 @@ struct ComponentView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color(red: 255/255, green: 154/255, blue: 105/255))
                         
-                        Text("여기에 커스텀 키보드 구성 사진")
-                            .foregroundStyle(.white)
+                        Image("keyboard_example")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
                     }
                     .frame(height: 200)
                     .padding(.horizontal, 16)
@@ -38,6 +39,7 @@ struct ComponentView: View {
                             CategoryBadgeListView(categoryList: categoryMockData)
                         }
                     }
+                    .padding(.top, 16)
                 }
                 .padding(.top, 16)
             }
@@ -49,8 +51,10 @@ struct ComponentView: View {
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("", systemImage: "cart") {
-                        
+                    NavigationLink {
+                        TotalCartView()
+                    } label: {
+                        Image(systemName: "cart")
                     }
                     .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
                 }
