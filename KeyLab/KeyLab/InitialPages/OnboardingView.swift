@@ -25,79 +25,24 @@ struct OnboardingView: View {
         NavigationStack {
             VStack {
                 Spacer(minLength: 110)
-//                GeometryReader { geometry in
-//                    ScrollView(.horizontal, showsIndicators: false) {
-//                        HStack(spacing: 0) {
-//                            ForEach(0..<4) { index in
-//                                Image("onboarding\(index)")
-//                                    .resizable()
-//                                    .aspectRatio(contentMode: .fit)
-//                                    .frame(width: geometry.size.width)
-//                            }
-//                        }
-//                    }
-//                    .scrollTargetBehavior(.paging)
-//                }
                 OnBoardingPagingView()
                     .onAppear{
                         setUpAppearance()
                     }
             }
-            
             VStack {
-                
-                
-//                Text("\(onBoardingStrings[0])")
-//                    .font(.title)
-//                    .fontWeight(.semibold)
-//                Spacer()
-//                PageControl(numberOfPages: 4, currentPage: $currentPageNum)
-                
-                
-                VStack {
-                    NavigationLink(destination: LoginView()) {
-                        
-                        Button {
-                            
-                        } label: {
-                            Text("로그인")
-                                .font(.title)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .clipShape(Capsule())
-                        .tint(.mainorange)
-                        .padding()
-                    }
-                }
-                
-                
-                Button {
-                    
-                } label: {
-                    Text("회원가입")
+                NavigationLink(destination: LoginView()) {
+                    Text("시작하기")
                         .font(.title)
+                        .padding()
                         .frame(maxWidth: .infinity)
                 }
-                .tint(.mainorange)
+                .buttonStyle(.borderedProminent)
                 .clipShape(Capsule())
+                .tint(.mainorange)
                 .padding()
             }
         }
-        //            .toolbar {
-        //                ToolbarItem(placement: .topBarTrailing, content: {
-        //                    Button {
-        //
-        //                    } label: {
-        //                        Text("건너뛰기")
-        //                    }
-        //                    .tint(.gray)
-        //                })
-        //            }
-        
-        
-        
     }
     
     func setUpAppearance() {

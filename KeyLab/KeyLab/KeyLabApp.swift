@@ -13,11 +13,11 @@ struct KeyLabApp: App {
         WindowGroup {
             let isLogin = false
             
-            if isLogin {
+//            if isLogin {
                 KeyLabTabView()
-            } else {
-                OnBoardingPagingView()
-            }
+//            } else {
+//                OnBoardingPagingView()
+//            }
         }
     }
 }

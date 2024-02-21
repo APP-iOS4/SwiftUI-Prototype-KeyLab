@@ -10,11 +10,11 @@ import SwiftUI
 struct ProductDoubleLineGridView: View {
     var body: some View {
         ScrollView(.horizontal) {
-            LazyHGrid(rows: [GridItem(), GridItem()], spacing: 16) {
+            LazyHGrid(rows: [GridItem()], spacing: 16) {
                 ForEach(1...10, id: \.self) { index in
                     VStack {
                         RoundedRectangle(cornerRadius: 8)
-                            .fill(Color(red: 255/255, green: 154/255, blue: 105/255))
+                            .fill(.mainorange)
                             .frame(height: 80)
                         Text("조합 \(index)")
                         Text("트렌디한 감성의 어쩌구")
