@@ -27,3 +27,5 @@ let reviewItems = [
     ReviewItem(id: 9, image: "image6", title: "제목", content: "기타 내용", heartCount: 9000),
     ReviewItem(id: 10, image: "image6", title: "제목", content: "기타 내용", heartCount: 10000),
   ]
+
+let texts = ["핑크핑크", "화이트", "블랙핑크", "레트로", "일렉트릭", "멋사", "일곱 번째", "여덟 번째", "아홉 번째", "열 번째"]
