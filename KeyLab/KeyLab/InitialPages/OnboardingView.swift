@@ -45,7 +45,7 @@ struct OnboardingView: View {
         }
     }
     
-    func setUpAppearance() {
+    public func setUpAppearance() {
         UIPageControl.appearance().currentPageIndicatorTintColor = .mainorange
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.gray
     }
