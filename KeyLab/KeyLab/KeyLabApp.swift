@@ -14,10 +14,9 @@ struct KeyLabApp: App {
             let isLogin = false
             
 //            if isLogin {
-//                KeyLabTabView()
+                KeyLabTabView()
 //            } else {
-//                OnBoardingPagingView()
-                  ProductDetailView()
+//                OnBoardingView()
 //            }
         }
     }
