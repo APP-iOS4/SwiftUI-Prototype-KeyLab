@@ -18,13 +18,14 @@ struct HomeView: View {
                     ZStack(alignment: .bottomTrailing) {
                         TabView(selection: $tipPageIndex) {
                             ForEach(1...3, id: \.self) { index in
-                                RoundedRectangle(cornerRadius: 8)
-                                    .stroke(lineWidth: 0.1)
-                                    .padding(.horizontal, 16)
+                                Image("ad1")
+                                    .resizable()
+                                    .clipShape(RoundedRectangle(cornerRadius: 8))
                                     .overlay {
-                                        Text("꿀팁\(index)")
-                                            .font(.title)
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .stroke(lineWidth: 0.1)
                                     }
+                                    .padding(.horizontal, 16)
                             }
                         }
                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
@@ -43,54 +44,49 @@ struct HomeView: View {
                     
                     HStack {
                         Button {
-                            // TODO: TabBar Paging
                             tabViewIndex = 2
                         } label: {
                             VStack {
-                                Image(systemName: "cpu")
+                                Image(systemName: "wrench.and.screwdriver.fill")
                                 Text("조립")
                             }
+                            .frame(maxWidth: .infinity)
                         }
                         .frame(maxWidth: .infinity, minHeight: 70)
-                        .tint(Color(.mainorange))
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color(.mainorange))
-                        }
+                        .background(.mainorange)
+                        .tint(Color(.white))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
                         
                         Button {
-                            // TODO: TabBar Paging
                             tabViewIndex = 3
                         } label: {
                             VStack {
-                                Image(systemName: "cpu")
+                                Image(systemName: "gearshape.2.fill")
                                 Text("부품")
                             }
+                            .frame(maxWidth: .infinity)
                         }
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 70)
-                        .tint(Color(.mainorange))
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color(.mainorange))
-                        }
+                        .frame(maxWidth: .infinity, minHeight: 70)
+                        .background(.mainorange)
+                        .tint(Color(.white))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
                     }
                     .padding(.horizontal, 16)
                     
-                    VStack(alignment: .leading) {
-                        Text("인기 조합")
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("조합 Top 10")
                             .font(.title)
                             .padding(.horizontal, 16)
                         
                         ProductDoubleLineGridView()
                     }
                     
-                    VStack(alignment: .leading) {
-                        Text("후기 Top 10")
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("부품 Top 10")
                             .font(.title)
                             .padding(.horizontal, 16)
                         
-                        ReviewHorizontalScrollView()
+                        ProductDoubleLineGridView()
                     }
                     
 

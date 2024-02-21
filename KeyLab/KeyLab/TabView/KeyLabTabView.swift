@@ -12,7 +12,6 @@ struct KeyLabTabView: View {
     @State private var tabViewIndex: Int = 1
     
     var body: some View {
-//        NavigationStack(path: $navigationPath) {
             TabView(selection: $tabViewIndex) {
                 HomeView(tabViewIndex: $tabViewIndex)
                     .tag(1)
@@ -45,9 +44,6 @@ struct KeyLabTabView: View {
                     }
             }
             .tint(.mainorange)
-//            .navigationBarBackButtonHidden()
-//            .toolbar(.hidden)
-//        }
     }
 }
 

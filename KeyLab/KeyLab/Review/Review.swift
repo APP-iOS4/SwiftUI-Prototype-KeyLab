@@ -14,49 +14,52 @@ struct Review: View {
     let gridItems = Array(repeating: GridItem(.flexible()), count: 2)
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(
-                columns: gridItems,
-                spacing: 16,
-                pinnedViews: .sectionHeaders
-            ) {
-                Section {
-                    ForEach(productList) { product in
-                        NavigationLink {
-                            DetailView(item: reviewItems[0])
-                        } label: {
-                            ProductItemView(product: product)
-                        }
-                        .buttonStyle(.plain)
-                    }
-                } header: {
-                    VStack(alignment: .trailing) {
-                        CategoryBadgeListView(categoryList: texts)
-                        
-                        Button(action: {
-                            self.pressed.toggle()
-                        }) {
-                            HStack {
-                                Text("인기순")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                Image(systemName: pressed ? "chevron.up" : "chevron.down")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
+        NavigationView {
+            ScrollView {
+                LazyVGrid(
+                    columns: gridItems,
+                    spacing: 16,
+                    pinnedViews: .sectionHeaders
+                ) {
+                    Section {
+                        ForEach(productList) { product in
+                            NavigationLink {
+                                DetailView(item: reviewItems[0])
+                            } label: {
+                                ProductItemView(product: product)
                             }
-                            .padding(.bottom, 4)
+                            .buttonStyle(.plain)
                         }
-                        
-                        Rectangle()
-                            .frame(height: 0.1)
+                    } header: {
+                        VStack(alignment: .trailing) {
+                            CategoryBadgeListView(categoryList: texts)
+                            
+                            Button(action: {
+                                self.pressed.toggle()
+                            }) {
+                                HStack {
+                                    Text("인기순")
+                                        .font(.headline)
+                                        .foregroundColor(.black)
+                                    Image(systemName: pressed ? "chevron.up" : "chevron.down")
+                                        .font(.headline)
+                                        .foregroundColor(.black)
+                                }
+                                .padding(.bottom, 4)
+                            }
+                            
+                            Rectangle()
+                                .frame(height: 0.1)
+                        }
+                        .background()
                     }
-                    .background()
+                    
                 }
-                
+                .toolbar(.hidden)
             }
+            .clipped()
             .toolbar(.hidden)
         }
-        .clipped()
     }
 }
 

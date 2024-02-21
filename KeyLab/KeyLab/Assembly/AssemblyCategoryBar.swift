@@ -14,24 +14,26 @@ struct AssemblyCategoryBar: View {
     var body: some View {
         ScrollView(.horizontal){
             //enum으로 배치하고....?ㅠ
-            LazyHGrid(rows: [GridItem(.adaptive(minimum: .infinity, maximum: .infinity))]){
-                ForEach( (0...6) , id: \.self){ index in
-                    Button(action: {
-//                        
-//                        print("\(index)")
-//                        if isFlag{
-//                            self.id(index).
-//                        }else{
-//                            storageCount = index
-//                        }
-//                        
-                    }, label: {
-                        Text("\(categoryMockData[progressCount-1]) 종류 \(index)").foregroundColor(.white).padding(10)
+            LazyHGrid(rows: [
+                GridItem(.adaptive(minimum: .infinity, maximum: .infinity))
+            ]){
+                ForEach(0...6, id: \.self){ index in
+                    Button {
                         
-                    }).border(Color.mainorange , width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    } label: {
+                        Text("\(categoryMockData[progressCount-1]) 종류 \(index)")
+                            .font(.caption)
+                            .foregroundColor(.white)
+                            .padding(10)
+                    }
+                    .background(.mainorange)
+                    .clipShape(RoundedRectangle(cornerRadius: 40))
                 }
-            }.background(.mainorange.opacity(0.5))
-        }.scrollIndicators(.hidden)
+            }
+            .padding(.horizontal, 16)
+        }
+        .scrollIndicators(.hidden)
+        .frame(height: 50)
     }
 }
 

@@ -16,7 +16,7 @@ struct KeyLabApp: App {
 //            if isLogin {
                 KeyLabTabView()
 //            } else {
-//                OnBoardingPagingView()
+//                OnBoardingView()
 //            }
         }
     }
