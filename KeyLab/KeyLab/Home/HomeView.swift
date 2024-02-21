@@ -104,8 +104,10 @@ struct HomeView: View {
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("", systemImage: "cart") {
-                        
+                    NavigationLink {
+                        TotalCartView()
+                    } label: {
+                        Image(systemName: "cart")
                     }
                     .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
                 }
