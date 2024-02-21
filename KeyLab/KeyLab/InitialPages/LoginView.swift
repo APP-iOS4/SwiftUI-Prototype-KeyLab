@@ -17,7 +17,7 @@ struct LoginView: View {
     
     
     var body: some View {
-        NavigationStack {
+//        NavigationStack {
             VStack(alignment: .leading) {
                 Text("ID")
                 TextField("  id입력", text: $idLabel)
@@ -60,7 +60,7 @@ struct LoginView: View {
             
             VStack {
                 NavigationLink {
-                    
+                    KeyLabTabView()
                 } label: {
                     Text("로그인")
                         .font(.title2)
@@ -127,7 +127,7 @@ struct LoginView: View {
                 
             }
             
-        }
+//        }
         .navigationTitle("로그인")
     }
 }

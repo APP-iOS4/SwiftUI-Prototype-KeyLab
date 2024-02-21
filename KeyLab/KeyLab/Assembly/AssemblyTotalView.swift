@@ -15,11 +15,11 @@ struct AssemblyTotalView: View {
     @State private var isShowingFilterSheet: Bool = false
     
     var body: some View {
-        NavigationStack{
+        NavigationView{
             VStack{
                 //이 단계의 부품 이미지
-                Spacer()
-                Divider()
+//                Spacer()
+//                Divider()
                 Image("assemblyMainImage").resizable().aspectRatio(contentMode: .fit).frame(height: 180)
                 VStack{
                     Text("But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born ").padding().frame(height: 100).background(Color(red: 255 / 255, green: 154 / 255, blue: 105 / 255).opacity(0.2))
@@ -84,7 +84,8 @@ struct AssemblyTotalView: View {
             })
             
             
-        }.ignoresSafeArea(.all)
+        }
+//        .ignoresSafeArea(.all)
     }
 }
 
