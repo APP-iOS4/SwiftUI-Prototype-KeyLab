@@ -8,29 +8,37 @@
 import SwiftUI
 
 struct ProductCell: View {
-    //나중엔 모델에서 받아오기
-    var productName = " [부품] 제품명 / 부품번호 "
+    @Binding var progressCount: Int
+    @Binding var isSelected: Bool
+    var buttonAction: (() -> ())?
     
-    @Binding var isclickwidth: Bool
-    
-    //선택시에 바인딩값으로 true면 border 주황색 || width를 진하게 하던가
     var body: some View {
         VStack{
             ZStack{
-                if isclickwidth{
-                    Image("assemblyProductCell").resizable().aspectRatio(contentMode: .fit).frame(width: 150, height: 200).border(Color(red: 255 / 255, green: 154 / 255, blue: 105 / 255), width: 5)
-                }else{
-                    Image("assemblyProductCell").resizable().aspectRatio(contentMode: .fit).frame(width: 150, height: 200).border(Color(red: 255 / 255, green: 154 / 255, blue: 105 / 255), width: 1)
-                }
                 
-                //찜표시..
+                Text("\(categoryMockData[progressCount-1])\n이미지").frame(width: 150, height: 200).border(Color.mainorange, width: 1)
                 Text("\n\n\n\n\n\n\n                         🧡")
+                if isSelected{
+                    Image(systemName: "checkmark")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 120, height: 120)
+                    
+                }
+            }.onTapGesture {
+                buttonAction?()
             }
-            Text("\(productName)")
-        }
+            .contextMenu(menuItems: {
+                Text("상세보기_sheet")
+                Text("찜하기")
+            })
+            
+            Text("[\(categoryMockData[progressCount-1])]제품명")
+
+        }.foregroundColor(.mainorange)
     }
 }
 
 #Preview {
-    ProductCell( isclickwidth: .constant(false))
+    ProductCell( progressCount: .constant(3), isSelected: .constant(false))
 }

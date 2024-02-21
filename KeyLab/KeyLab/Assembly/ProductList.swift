@@ -8,23 +8,25 @@
 import SwiftUI
 
 var exCount = 10
+
 struct ProductList: View {
-    @State private var isclickwidth = false
+    @State var boolArray = [Bool](repeating: false, count: exCount)
+    @Binding var progressCount: Int
     var body: some View {
         ScrollView(.horizontal){
-            LazyHGrid(rows: [GridItem(.adaptive(minimum: 150, maximum: 150))], spacing: 1){
-                ForEach( (0...exCount) , id: \.self ) { index in
-                    Button{
-                        isclickwidth.toggle()
-                    } label: {
-                        ProductCell(isclickwidth : $isclickwidth)
-                    }
-                }
+            LazyHGrid(rows: [GridItem(.adaptive(minimum: 150, maximum: 150))], spacing: 5){
+                ForEach( (0...exCount-1) , id: \.self ) { index in
+                    ProductCell(progressCount: $progressCount,isSelected: $boolArray[index]){
+                        boolArray[index].toggle()
+                        for i in boolArray.indices where i != index {
+                            boolArray[i] = false
+                        }
+                    }                }
             }
         }
     }
 }
 
 #Preview {
-    ProductList()
+    ProductList(progressCount: .constant(4))
 }

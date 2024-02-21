@@ -9,16 +9,17 @@ import SwiftUI
 
 struct AssemblyProgressView: View {
     @Binding var progressCount: Int
+    
     var body: some View {
         ZStack(alignment: .leading){
             Color(red: 255 / 255, green: 154 / 255, blue: 105 / 255).opacity(0.2)
             HStack{
                 ForEach((1...progressCount),id: \.self){_ in
-                    Rectangle().foregroundColor(Color(red: 255 / 255, green: 154 / 255, blue: 105 / 255))
+                    Rectangle().foregroundColor(Color.mainorange)
                 }
-                if progressCount <= 11 {
-                    ForEach((progressCount ... 11),id: \.self){_ in
-                        Rectangle().foregroundColor(Color(red: 255 / 255, green: 154 / 255, blue: 105 / 255).opacity(0.2))
+                if progressCount <= 9{
+                    ForEach((progressCount ... 9),id: \.self){_ in
+                        Rectangle().foregroundColor(Color.mainorange.opacity(0.2))
                     }
                 }
             }
