@@ -31,8 +31,8 @@
 		138A14AF2B84DDAB00EB67F6 /* KeyLabTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14AE2B84DDAB00EB67F6 /* KeyLabTabView.swift */; };
 		138A14B12B85010800EB67F6 /* TotalCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14B02B85010800EB67F6 /* TotalCartView.swift */; };
 		138A14B32B8504CB00EB67F6 /* CheckBoxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14B22B8504CB00EB67F6 /* CheckBoxToggle.swift */; };
-		8289E65D2B84A215004E0757 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289E65C2B84A215004E0757 /* MyPageView.swift */; };
-		8289E65F2B84A21B004E0757 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289E65E2B84A21B004E0757 /* SettingView.swift */; };
+		8289E6642B85F70F004E0757 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289E6622B85F70F004E0757 /* MyPageView.swift */; };
+		8289E6652B85F70F004E0757 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289E6632B85F70F004E0757 /* SettingView.swift */; };
 		FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645D2B84319A0064059B /* AssemblyTotalView.swift */; };
 		FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */; };
 		FE8164652B8439C90064059B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8164642B8439C90064059B /* ProductCell.swift */; };
@@ -70,8 +70,8 @@
 		138A14AE2B84DDAB00EB67F6 /* KeyLabTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyLabTabView.swift; sourceTree = "<group>"; };
 		138A14B02B85010800EB67F6 /* TotalCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCartView.swift; sourceTree = "<group>"; };
 		138A14B22B8504CB00EB67F6 /* CheckBoxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxToggle.swift; sourceTree = "<group>"; };
-		8289E65C2B84A215004E0757 /* MyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
-		8289E65E2B84A21B004E0757 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		8289E6622B85F70F004E0757 /* MyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		8289E6632B85F70F004E0757 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		FE81645D2B84319A0064059B /* AssemblyTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyTotalView.swift; sourceTree = "<group>"; };
 		FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyProgressView.swift; sourceTree = "<group>"; };
 		FE8164642B8439C90064059B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -193,8 +193,8 @@
 		138A14B42B8508EB00EB67F6 /* Mypage */ = {
 			isa = PBXGroup;
 			children = (
-				8289E65C2B84A215004E0757 /* MyPageView.swift */,
-				8289E65E2B84A21B004E0757 /* SettingView.swift */,
+				8289E6622B85F70F004E0757 /* MyPageView.swift */,
+				8289E6632B85F70F004E0757 /* SettingView.swift */,
 			);
 			path = Mypage;
 			sourceTree = "<group>";
@@ -294,11 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */,
-				8289E65F2B84A21B004E0757 /* SettingView.swift in Sources */,
 				FE8164702B848B540064059B /* ProductFilter.swift in Sources */,
 				138A14AC2B84D20D00EB67F6 /* ProductDoubleLineGridView.swift in Sources */,
 				097E729A2B849E3D00DDA747 /* FirstOnboardingView.swift in Sources */,
 				097E729D2B849E3D00DDA747 /* OnboardingView.swift in Sources */,
+				8289E6642B85F70F004E0757 /* MyPageView.swift in Sources */,
 				FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */,
 				097E72992B849E3D00DDA747 /* FourthOnboardingView.swift in Sources */,
 				097E72962B849E3D00DDA747 /* OnBoardingPagingView.swift in Sources */,
@@ -319,12 +319,12 @@
 				138A14B12B85010800EB67F6 /* TotalCartView.swift in Sources */,
 				0179EEE52B84A4CC008AEDEB /* Review.swift in Sources */,
 				138A14AA2B84D20300EB67F6 /* ReviewHorizontalScrollView.swift in Sources */,
+				8289E6652B85F70F004E0757 /* SettingView.swift in Sources */,
 				138A14A62B84C63400EB67F6 /* ComponentView.swift in Sources */,
 				097E729B2B849E3D00DDA747 /* ThridOnboardingView.swift in Sources */,
 				097E725D2B84292300DDA747 /* KeyLabApp.swift in Sources */,
 				138A149F2B84C62C00EB67F6 /* HomeView.swift in Sources */,
 				FE81646E2B8469DD0064059B /* AssemblyCategoryBar.swift in Sources */,
-				8289E65D2B84A215004E0757 /* MyPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,43 +31,12 @@ struct SettingView: View {
                     })
                 }
                 
-                Section(header: Text("부가기능")) {
-                    NavigationLink(destination: secondView(index: 2)) {
-                        Text("2")
-                    }
-                    NavigationLink(destination: secondView(index: 3)) {
-                        Text("3")
-                    }
-                    NavigationLink(destination: secondView(index: 4)) {
-                        Text("4")
-                    }
-                    NavigationLink(destination: secondView(index: 5)) {
-                        Text("5")
-                    }
-                    NavigationLink(destination: secondView(index: 6)) {
-                        Text("6")
-                    }
-                }
+                Button(action: {}, label: {
+                    Text("현재 버전 V 0.0.1")
+                })
+            
                 
-                Section(header: Text("알림")) {
-                    NavigationLink(destination: secondView(index: 9)) {
-                        Text("알림 설정")
-                    }
-                }
-                Section(header: Text("")) {
-                    Button(action: {}, label: {
-                        Text("회원 탈퇴")
-                            .foregroundStyle(.black)
-                    })
-                }
-                Section(header: Text("")) {
-
-                    Button(action: {}, label: {
-                        Text("로그아웃")
-                            .foregroundStyle(.red)
-                    })
-
-                }
+                
             }
         }
     }
