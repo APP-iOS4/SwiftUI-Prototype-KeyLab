@@ -1,6 +1,6 @@
 # KeyLab ⌨️
 커스텀 키보드 입문이 어려운 사람들을 위한 앱
-<br>아이디어 개략 흐름 및 개발 기술 검토(초안설계/개발 기간 3일)
+<br>아이디어 대략 흐름 및 개발 기술 검토(초안설계/개발 기간 3일)
 <br><br>
 
 ## 시나리오
@@ -38,7 +38,7 @@
 <br>
 
 # License
-Copyright 멋쟁이사자처럼 Lab5. All rights reserved.
+Copyright 멋쟁이사자처럼 Lab1. All rights reserved.
 
 Licensed under the [MIT](LICENSE) license.
 
