@@ -12,7 +12,7 @@ struct KeyLabTabView: View {
     @State private var tabViewIndex: Int = 1
     
     var body: some View {
-        NavigationStack(path: $navigationPath) {
+//        NavigationStack(path: $navigationPath) {
             TabView(selection: $tabViewIndex) {
                 HomeView(tabViewIndex: $tabViewIndex)
                     .tag(1)
@@ -44,9 +44,10 @@ struct KeyLabTabView: View {
                         Label("Mypage", systemImage: "person.fill")
                     }
             }
-            .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
-            .navigationBarBackButtonHidden()
-        }
+            .tint(.mainorange)
+//            .navigationBarBackButtonHidden()
+//            .toolbar(.hidden)
+//        }
     }
 }
 

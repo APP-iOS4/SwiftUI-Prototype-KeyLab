@@ -14,43 +14,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVStack(spacing: 36) {
-                    HStack {
-                        Button {
-                            // TODO: TabBar Paging
-                            tabViewIndex = 2
-                        } label: {
-                            VStack {
-                                Image(systemName: "cpu")
-                                Text("조립")
-                            }
-                        }
-                        .frame(maxWidth: .infinity, minHeight: 180)
-                        .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color(red: 255/255, green: 154/255, blue: 105/255))
-                        }
-                        
-                        Button {
-                            // TODO: TabBar Paging
-                            tabViewIndex = 3
-                        } label: {
-                            VStack {
-                                Image(systemName: "cpu")
-                                Text("부품")
-                            }
-                        }
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 180)
-                        .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color(red: 255/255, green: 154/255, blue: 105/255))
-                        }
-                    }
-                    .padding(.horizontal, 16)
-                    
+                VStack(spacing: 36) {
                     ZStack(alignment: .bottomTrailing) {
                         TabView(selection: $tipPageIndex) {
                             ForEach(1...3, id: \.self) { index in
@@ -64,7 +28,7 @@ struct HomeView: View {
                             }
                         }
                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-                        .frame(height: 140)
+                        .frame(height: 100)
                         
                         RoundedRectangle(cornerRadius: 8)
                             .frame(width: 50, height: 26)
@@ -77,13 +41,41 @@ struct HomeView: View {
                             }
                     }
                     
-                    VStack(alignment: .leading) {
-                        Text("후기 Top 10")
-                            .font(.title)
-                            .padding(.horizontal, 16)
+                    HStack {
+                        Button {
+                            // TODO: TabBar Paging
+                            tabViewIndex = 2
+                        } label: {
+                            VStack {
+                                Image(systemName: "cpu")
+                                Text("조립")
+                            }
+                        }
+                        .frame(maxWidth: .infinity, minHeight: 70)
+                        .tint(Color(.mainorange))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color(.mainorange))
+                        }
                         
-                        ReviewHorizontalScrollView()
+                        Button {
+                            // TODO: TabBar Paging
+                            tabViewIndex = 3
+                        } label: {
+                            VStack {
+                                Image(systemName: "cpu")
+                                Text("부품")
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 70)
+                        .tint(Color(.mainorange))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color(.mainorange))
+                        }
                     }
+                    .padding(.horizontal, 16)
                     
                     VStack(alignment: .leading) {
                         Text("인기 조합")
@@ -93,8 +85,18 @@ struct HomeView: View {
                         ProductDoubleLineGridView()
                     }
                     
+                    VStack(alignment: .leading) {
+                        Text("후기 Top 10")
+                            .font(.title)
+                            .padding(.horizontal, 16)
+                        
+                        ReviewHorizontalScrollView()
+                    }
+                    
+
+                    
                 }
-                .padding(.top, 8)
+                .padding(.top, 32)
             }
             .clipped()
             .toolbar {
@@ -109,7 +111,7 @@ struct HomeView: View {
                     } label: {
                         Image(systemName: "cart")
                     }
-                    .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
+                    .tint(Color(.mainorange))
                 }
             }
         }

@@ -32,11 +32,11 @@ struct CategoryBadgeListView: View {
                         
                     } label: {
                         Text(category)
-                            .font(.headline)
+                            .font(.caption)
                             .foregroundStyle(.white)
                             .padding(8)
                     }
-                    .background(Color(red: 255/255, green: 154/255, blue: 105/255))
+                    .background(.mainorange)
                     .clipShape(RoundedRectangle(cornerRadius: 40))
                 }
             }
@@ -45,6 +45,7 @@ struct CategoryBadgeListView: View {
         .padding(.vertical, 4)
         .background()
         .scrollIndicators(.hidden)
+        .frame(height: 60)
     }
 }
 

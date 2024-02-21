@@ -16,7 +16,7 @@ struct ComponentView: View {
                 VStack {
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
-                            .fill(Color(red: 255/255, green: 154/255, blue: 105/255))
+                            .fill(Color(.mainorange))
                         
                         Image("keyboard_example")
                             .resizable()
@@ -56,7 +56,7 @@ struct ComponentView: View {
                     } label: {
                         Image(systemName: "cart")
                     }
-                    .tint(Color(red: 255/255, green: 154/255, blue: 105/255))
+                    .tint(Color(.mainorange))
                 }
             }
         }

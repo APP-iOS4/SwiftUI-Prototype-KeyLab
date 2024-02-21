@@ -17,87 +17,67 @@ struct MyPageView: View {
     ]
     
     var body: some View {
-        
-        TabView{
-            NavigationStack {
-                
+            NavigationView {
                 VStack {
-                    Text("마이페이지")
-                        .navigationBarTitle("")
-                    
-                        .font(.system(size: 25, weight: .semibold))
-                        .tracking(3)
-                        .padding(.top, -30)
-                        .toolbar {
-                            ToolbarItemGroup() {
-                                NavigationLink {
-                                    SettingView()
-                                        .navigationTitle("환경설정")
-                                    
-                                } label: {
-                                    Image(systemName: "gearshape")
-                                        .font(.title3)
-                                        .padding(.top, 10)
-                                }
+                    HStack {
+                        Image(systemName:"person.circle.fill")
+                            .font(.system(size: 90, weight: .bold, design: .default))
+                            .clipShape(Circle())
+                            .overlay {
+                                Circle()
+                                    .stroke(Color(.mainorange), lineWidth: 3)
                             }
-                        }
-                    
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Color.gray)
-                            .frame(width: 350, height: 180)
-                        HStack{
-                            Image(systemName:"person.circle.fill")
-                                .font(.system(size: 90, weight: .bold, design: .default))
-                                .clipShape(Circle())
-                                .overlay {
-                                    Circle().stroke(.white, lineWidth: 4)
-                                }
-                                .shadow(radius: 5)
-                                .padding(5)
-                            VStack(alignment:.leading,spacing: 5){
-                                Text("\(userName)")
-                                    .font(.system(size: 35, weight: .bold))
-                                    .tracking(5)
-                                Text("회원등급: \(userTier)")
-                                    .font(.system(size: 19))
-                                
-                                HStack{
-                                    VStack {
-                                        Button(action: {}, label: {
-                                            Image(systemName: "heart")
-                                        })
-                                        .font(.system(size: 28))
-                                        
-                                        Text("찜")
-                                    }
-                                    VStack {
-                                        Button(action: {}, label: {
-                                            Image(systemName: "ticket")
-                                        })
-                                        .font(.system(size: 28))
-                                        .padding(.vertical, 0.1)
-                                        Text("쿠폰")
-                                    }
-                                    .padding(.horizontal, 4)
-                                    VStack {
-                                        Button(action: {}, label: {
-                                            Image(systemName: "text.bubble")
-                                        })
-                                        .font(.system(size: 28))
-                                        Text("후기")
-                                    }
-                                }
-                                .font(.system(size: 19))
-                                
-                                
-                            }
+                            .padding(5)
+                        
+                        VStack(alignment:.leading,spacing: 5){
+                            Text("\(userName)")
+                                .font(.system(size: 35, weight: .bold))
+                                .tracking(5)
                             
-                            .padding(25)
+                            Text("회원등급: \(userTier)")
+                                .font(.system(size: 19))
+                            
+                            HStack{
+                                VStack {
+                                    Button(action: {}, label: {
+                                        Image(systemName: "heart")
+                                    })
+                                    .font(.system(size: 28))
+                                    
+                                    Text("찜")
+                                }
+                                VStack {
+                                    Button(action: {}, label: {
+                                        Image(systemName: "ticket")
+                                    })
+                                    .font(.system(size: 28))
+                                    .padding(.vertical, 0.1)
+                                    Text("쿠폰")
+                                }
+                                .padding(.horizontal, 4)
+                                VStack {
+                                    Button(action: {}, label: {
+                                        Image(systemName: "text.bubble")
+                                    })
+                                    .font(.system(size: 28))
+                                    Text("후기")
+                                }
+                            }
+                            .font(.system(size: 19))
+                            
                             
                         }
                         
+                        .padding(25)
+                        
                     }
+                    .frame(width: 350, height: 180)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color(.mainorange), lineWidth: 0.5)
+                    }
+                    
+                    
                     HStack(alignment:.center) {
                         VStack {
                             Button(action: {}, label: {
@@ -151,10 +131,31 @@ struct MyPageView: View {
                     }
                     
                 }
+                .padding(.top, 16)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Text("마이페이지")
+                            .font(.largeTitle)
+                    }
+                    
+                    ToolbarItem(placement: .topBarTrailing) {
+                        NavigationLink {
+                            SettingView()
+                                .navigationTitle("환경설정")
+                            
+                        } label: {
+                            Image(systemName: "gearshape")
+//                                .font(.title3)
+                                .padding(.top, 10)
+                        }
+                        .tint(Color(.mainorange))
+                    }
+                }
             }
-        }
     }
 }
 #Preview {
-    MyPageView()
+    NavigationStack {
+        MyPageView()
+    }
 }
