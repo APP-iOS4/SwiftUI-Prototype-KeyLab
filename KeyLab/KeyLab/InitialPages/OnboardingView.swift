@@ -43,6 +43,9 @@ struct OnboardingView: View {
                 .padding()
             }
         }
+        .ignoresSafeArea()
+        
+        
     }
     
     public func setUpAppearance() {

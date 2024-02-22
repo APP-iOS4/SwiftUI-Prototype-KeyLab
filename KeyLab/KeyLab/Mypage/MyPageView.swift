@@ -15,8 +15,8 @@ struct MyPageView: View {
     @State private var logOutAlert = false
     @State private var cacheClearAlert = false
     @State var navigateLogin = false
-
-
+    
+    
     
     var userName:String = "하세기"
     var userTier = Image(systemName:"b.circle")
@@ -46,22 +46,14 @@ struct MyPageView: View {
                             
                             HStack{
                                 VStack {
-                                    Button(action: {}, label: {
-                                        Image(systemName: "heart")
-                                    })
+                                    NavigationLink {
+                                        TotalCartView()
+                                    } label: {
+                                        Image(systemName: "cart")
+                                    }
                                     .font(.system(size: 28))
-                                    
                                     Text("찜")
-                                }
-                                VStack {
-                                    Button(action: {}, label: {
-                                        Image(systemName: "ticket")
-                                    })
-                                    .font(.system(size: 28))
-                                    .padding(.vertical, 0.1)
-                                    Text("쿠폰")
-                                }
-                                .padding(.horizontal, 4)
+                                }.padding(.horizontal,5)
                                 VStack {
                                     Button(action: {}, label: {
                                         Image(systemName: "text.bubble")
@@ -87,44 +79,44 @@ struct MyPageView: View {
                     
                     HStack(alignment:.center) {
                         VStack {
-                            Button(action: {}, label: {
+                            NavigationLink {
+                                OrderView()
+                            } label: {
                                 Image(systemName: "creditcard")
-                            })
+                            }
                             .font(.system(size: 28))
                             Text("구매내역")
                         }
-                        .padding(.leading, 40)
-                        Spacer()
+                        .padding(.trailing, 40)
+                        //                        Spacer()
+                        //
+                        //                        VStack {
+                        //                            Button(action: {}, label: {
+                        //                                Image(systemName: "box.truck")
+                        //                            })
+                        //                            .font(.system(size: 28))
+                        //                            Text("배송조회")
+                        //                        }
+                        //                        .padding(.vertical, 10)
+                        
                         
                         VStack {
-                            Button(action: {}, label: {
-                                Image(systemName: "box.truck")
-                            })
-                            .font(.system(size: 28))
-                            Text("배송조회")
-                        }
-                        .padding(.vertical, 10)
-                        Spacer()
-                        
-                        VStack {
-                            Button(action: {}, label: {
+                            NavigationLink {
+                                TotalCartView()
+                            } label: {
                                 Image(systemName: "cart")
-                            })
+                            }
                             .font(.system(size: 28))
                             Text("장바구니")
                         }
-                        .padding(.trailing, 40)
+                        .padding(.leading, 40)
                     }
+                    .padding(.top, 10)
                     Spacer()
                     
                     VStack(alignment: .leading) {
-                        NavigationLink(destination: secondView(index: 1)) {
+                        NavigationLink(destination: GongJiView()) {
                             Text("공지사항")
-                        }
-                        .padding()
-                        
-                        NavigationLink(destination: secondView(index: 2)) {
-                            Text("계정 관리")
                         }
                         .padding()
                         
@@ -144,11 +136,6 @@ struct MyPageView: View {
                         })
                         .padding()
                         
-                        Button(action: {}, label: {
-                            Text("개인정보 처리 방침")
-                        })
-                        .padding()
-                        
                         Button(action: {self.cacheClearAlert = true}, label: {
                             Text("캐시 삭제")
                                 .foregroundStyle(.red)
@@ -159,8 +146,8 @@ struct MyPageView: View {
                         
                         
                     message: {
-                            Text("임시로 저장된 데이터를 삭제하여 저장공간을 확보하시겠습니까?")
-                        }
+                        Text("임시로 저장된 데이터를 삭제하여 저장공간을 확보하시겠습니까?")
+                    }
                     .padding()
                         
                         
@@ -174,36 +161,18 @@ struct MyPageView: View {
                         }
                         
                     message: {
-                            Text("로그아웃 하시겠습니까?")
-                        }
-                        
-                        .padding()
-                    
+                        Text("로그아웃 하시겠습니까?")
                     }
                     .padding()
-                    
-                   
-                    
-                    
+                        
+                    }
+                    .padding()
                 }
                 .padding(.top, 16)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Text("마이페이지")
                             .font(.largeTitle)
-                    }
-                    
-                    ToolbarItem(placement: .topBarTrailing) {
-                        NavigationLink {
-                            SettingView()
-                                .navigationTitle("환경설정")
-                            
-                        } label: {
-                            Image(systemName: "gearshape")
-                            //                                .font(.title3)
-                                .padding(.top, 10)
-                        }
-                        .tint(Color(.mainorange))
                     }
                 }
             }

@@ -23,6 +23,9 @@
 		097E729B2B849E3D00DDA747 /* ThridOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72932B849E3D00DDA747 /* ThridOnboardingView.swift */; };
 		097E729C2B849E3D00DDA747 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72942B849E3D00DDA747 /* SignUpView.swift */; };
 		097E729D2B849E3D00DDA747 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E72952B849E3D00DDA747 /* OnboardingView.swift */; };
+		09B979B82B87118200D23124 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979B72B87118200D23124 /* OrderView.swift */; };
+		09B979BA2B87143C00D23124 /* ShipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979B92B87143C00D23124 /* ShipmentView.swift */; };
+		09B979BC2B87157800D23124 /* GongJiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979BB2B87157800D23124 /* GongJiView.swift */; };
 		138A149F2B84C62C00EB67F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A149E2B84C62C00EB67F6 /* HomeView.swift */; };
 		138A14A52B84C63400EB67F6 /* CategoryBadgeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14A12B84C63400EB67F6 /* CategoryBadgeListView.swift */; };
 		138A14A62B84C63400EB67F6 /* ComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14A22B84C63400EB67F6 /* ComponentView.swift */; };
@@ -34,7 +37,6 @@
 		138A14B12B85010800EB67F6 /* TotalCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14B02B85010800EB67F6 /* TotalCartView.swift */; };
 		138A14B32B8504CB00EB67F6 /* CheckBoxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14B22B8504CB00EB67F6 /* CheckBoxToggle.swift */; };
 		8289E65D2B84A215004E0757 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289E65C2B84A215004E0757 /* MyPageView.swift */; };
-		8289E65F2B84A21B004E0757 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289E65E2B84A21B004E0757 /* SettingView.swift */; };
 		FE0AB6A82B86D3420004A650 /* ReviewSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0AB6A72B86D3420004A650 /* ReviewSubView.swift */; };
 		FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645D2B84319A0064059B /* AssemblyTotalView.swift */; };
 		FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */; };
@@ -65,6 +67,9 @@
 		097E72932B849E3D00DDA747 /* ThridOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThridOnboardingView.swift; sourceTree = "<group>"; };
 		097E72942B849E3D00DDA747 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		097E72952B849E3D00DDA747 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		09B979B72B87118200D23124 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		09B979B92B87143C00D23124 /* ShipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentView.swift; sourceTree = "<group>"; };
+		09B979BB2B87157800D23124 /* GongJiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GongJiView.swift; sourceTree = "<group>"; };
 		138A149E2B84C62C00EB67F6 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		138A14A12B84C63400EB67F6 /* CategoryBadgeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBadgeListView.swift; sourceTree = "<group>"; };
 		138A14A22B84C63400EB67F6 /* ComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
@@ -76,7 +81,6 @@
 		138A14B02B85010800EB67F6 /* TotalCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCartView.swift; sourceTree = "<group>"; };
 		138A14B22B8504CB00EB67F6 /* CheckBoxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxToggle.swift; sourceTree = "<group>"; };
 		8289E65C2B84A215004E0757 /* MyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
-		8289E65E2B84A21B004E0757 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		FE0AB6A72B86D3420004A650 /* ReviewSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewSubView.swift; sourceTree = "<group>"; };
 		FE81645D2B84319A0064059B /* AssemblyTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyTotalView.swift; sourceTree = "<group>"; };
 		FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyProgressView.swift; sourceTree = "<group>"; };
@@ -203,7 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				8289E65C2B84A215004E0757 /* MyPageView.swift */,
-				8289E65E2B84A21B004E0757 /* SettingView.swift */,
+				09B979BB2B87157800D23124 /* GongJiView.swift */,
+				09B979B72B87118200D23124 /* OrderView.swift */,
+				09B979B92B87143C00D23124 /* ShipmentView.swift */,
 			);
 			path = Mypage;
 			sourceTree = "<group>";
@@ -303,10 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */,
-				8289E65F2B84A21B004E0757 /* SettingView.swift in Sources */,
+				09B979BC2B87157800D23124 /* GongJiView.swift in Sources */,
 				096AD6F52B85DA7300C065F0 /* ProductDetailView.swift in Sources */,
 				FE8164702B848B540064059B /* ProductFilter.swift in Sources */,
 				138A14AC2B84D20D00EB67F6 /* ProductDoubleLineGridView.swift in Sources */,
+				09B979B82B87118200D23124 /* OrderView.swift in Sources */,
 				097E729A2B849E3D00DDA747 /* FirstOnboardingView.swift in Sources */,
 				097E729D2B849E3D00DDA747 /* OnboardingView.swift in Sources */,
 				FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */,
@@ -318,6 +325,7 @@
 				0179EEE42B84A4CC008AEDEB /* DetailView.swift in Sources */,
 				138A14A52B84C63400EB67F6 /* CategoryBadgeListView.swift in Sources */,
 				096AD6F72B860FEB00C065F0 /* PurchaseSheetView.swift in Sources */,
+				09B979BA2B87143C00D23124 /* ShipmentView.swift in Sources */,
 				FE8164692B8444D50064059B /* AssemblyCartView.swift in Sources */,
 				138A14A82B84C63400EB67F6 /* Product.swift in Sources */,
 				097E72972B849E3D00DDA747 /* SecondOnboardingView.swift in Sources */,

@@ -145,8 +145,7 @@ struct ProductDetailView: View {
                     } else {
                         Image("productSample")
                             .resizable()
-                            .scaledToFill()
-                            .frame(height: .infinity, alignment: .top)
+                            .scaledToFit()
                             .clipped()
                         Button {
                             isDetailFull.toggle()
