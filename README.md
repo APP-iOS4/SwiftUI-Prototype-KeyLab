@@ -14,13 +14,14 @@
 
 
 ## 😀 팀원 소개
-| 사진      | 이름   | GitHub      | 
-| -------- | ----- | ----------- |
-| <img src="https://avatars.githubusercontent.com/u/151798123?v=4" alt="drawing" width="100"/> | 강태훈 | [@Taehooony](https://github.com/Taehooony)   | 
-| <img src="https://avatars.githubusercontent.com/u/53979393?v=4" alt="drawing" width="100"/> | 김예지 | [@nxtlevYeah](https://github.com/nxtlevYeah)   | 
-| <img src="https://avatars.githubusercontent.com/u/100953349?v=4" alt="drawing" width="100"/> | 심상원 | [@Upcircle2](https://github.com/Upcircle2) | 
-| <img src="https://avatars.githubusercontent.com/u/49361214?v=4" alt="drawing" width="100"/> | 유지호 | [@jihoooo97](https://github.com/jihoooo97)   |
-| <img src="https://avatars.githubusercontent.com/u/76551806?v=4" alt="drawing" width="100"/> | 정재웅 | [@jjw8959](https://github.com/jjw8959)  |
+| 사진      | 이름   | GitHub      | 한줄평       |
+| -------- | ----- | ----------- | ----------- |
+| <img src="https://avatars.githubusercontent.com/u/151798123?v=4" alt="drawing" width="100"/> | 강태훈 | [@Taehooony](https://github.com/Taehooony) | 많이 배울 수 있어서 좋았습니다 |
+| <img src="https://avatars.githubusercontent.com/u/53979393?v=4" alt="drawing" width="100"/> | 김예지 | [@nxtlevYeah](https://github.com/nxtlevYeah) | alert 함부러 쓰지않기 ❌ |
+| <img src="https://avatars.githubusercontent.com/u/100953349?v=4" alt="drawing" width="100"/> | 심상원 | [@Upcircle2](https://github.com/Upcircle2) | 서비스를 기획함에 있어 사용자의 플로우가 곧 가이드역할을 함으로서 편의성을 증진시킨다는점을 다시금 배웠다. |
+| <img src="https://avatars.githubusercontent.com/u/49361214?v=4" alt="drawing" width="100"/> | 유지호 | [@jihoooo97](https://github.com/jihoooo97) | 프로젝트를 기획 및 개발함에 있어 개발 스킬뿐만 아니라 기획 및 소프트스킬이 중요하다는 것을 많이 깨달았다. |
+| <img src="https://avatars.githubusercontent.com/u/76551806?v=4" alt="drawing" width="100"/> | 정재웅 | [@jjw8959](https://github.com/jjw8959) | 기획을 처음부터 마지막까지 확실하게 만들지 않으면 실제 제작했을때 빈틈이 많이 보인다는걸 다시금 깨달았다. |
+</br>
 
 ## 📄 시나리오
 - 릴스를 통해 커스텀 키보드에 입문을 하려했지만, 너무나도 많은 부품의 종류에 조립에 어려움을 느끼는 사람이 이 앱을 우연히 접하게 된다.
@@ -36,7 +37,7 @@
  - 커스텀 키보드에 대해 공부해야 구매할수 있어 진입장벽을 느꼈던 사람.
  - 커스텀 키보드를 간편히 조합하고, 추가 부품도 구매하려는 사람.
   
-## 🛠️ 구현 목표
+## 🥅 구현 목표
 - 커스텀 키보드를 쉽게 조립할 수 있는 플랫폼 개발.
 - Xcode로 SwiftUI 기반의 프로토타입 프로젝트 생성.
 
@@ -46,7 +47,6 @@
 - iOS 17.0
 - iPhone 15 Pro에 최적화 되어있음.
 - 라이트 모드에 최적화 되어있음.
-
 
 ## 🚙 앱 실행 방법
  1. main 브랜치에서 Git 프로젝트 Clone.
@@ -74,6 +74,8 @@
  4. 부품 선택후 상세페이지 진입하여 장바구니 버튼 선택
  5. 상단 장바구니로 이동 후 구매하기 상세페이지(미구현)
  6. 결제 완료(미구현)
+
+## 실행화면
 
 ## 🖥️ 미구현 목표
 구매하기 상세 페이지</br>
