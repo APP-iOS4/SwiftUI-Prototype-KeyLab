@@ -18,9 +18,9 @@
 | -------- | ----- | ----------- | ----------- |
 | <img src="https://avatars.githubusercontent.com/u/151798123?v=4" alt="drawing" width="100"/> | 강태훈 | [@Taehooony](https://github.com/Taehooony) | 많이 배울 수 있어서 좋았습니다 |
 | <img src="https://avatars.githubusercontent.com/u/53979393?v=4" alt="drawing" width="100"/> | 김예지 | [@nxtlevYeah](https://github.com/nxtlevYeah) | alert 함부러 쓰지않기 ❌ |
-| <img src="https://avatars.githubusercontent.com/u/100953349?v=4" alt="drawing" width="100"/> | 심상원 | [@Upcircle2](https://github.com/Upcircle2) | 서비스를 기획함에 있어 사용자의 플로우가 곧 가이드역할을 함으로서 편의성을 증진시킨다는점을 다시금 배웠다. |
-| <img src="https://avatars.githubusercontent.com/u/49361214?v=4" alt="drawing" width="100"/> | 유지호 | [@jihoooo97](https://github.com/jihoooo97) | 프로젝트를 기획 및 개발함에 있어 개발 스킬뿐만 아니라 기획 및 소프트스킬이 중요하다는 것을 많이 깨달았다. |
-| <img src="https://avatars.githubusercontent.com/u/76551806?v=4" alt="drawing" width="100"/> | 정재웅 | [@jjw8959](https://github.com/jjw8959) | 기획을 처음부터 마지막까지 확실하게 만들지 않으면 실제 제작했을때 빈틈이 많이 보인다는걸 다시금 깨달았다. |
+| <img src="https://avatars.githubusercontent.com/u/100953349?v=4" alt="drawing" width="100"/> | 심상원 | [@Upcircle2](https://github.com/Upcircle2) | 서비스를 기획함에 있어 사용자의 플로우가 곧 가이드역할을 함으로서</br>편의성을 증진시킨다는점을 다시금 배웠다. |
+| <img src="https://avatars.githubusercontent.com/u/49361214?v=4" alt="drawing" width="100"/> | 유지호 | [@jihoooo97](https://github.com/jihoooo97) | 프로젝트를 기획 및 개발함에 있어 개발 스킬뿐만 아니라</br>기획 및 소프트스킬이 중요하다는 것을 많이 깨달았다. |
+| <img src="https://avatars.githubusercontent.com/u/76551806?v=4" alt="drawing" width="100"/> | 정재웅 | [@jjw8959](https://github.com/jjw8959) | 기획을 처음부터 마지막까지 확실하게 만들지 않으면</br>실제 제작했을때 빈틈이 많이 보인다는걸 다시금 깨달았다. |
 </br>
 
 ## 📄 시나리오
