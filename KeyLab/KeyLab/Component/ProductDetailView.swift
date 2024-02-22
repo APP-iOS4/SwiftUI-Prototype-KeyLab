@@ -12,6 +12,8 @@ struct ProductDetailView: View {
     @State private var isDetailFull: Bool = false
     @State private var isSheetShow: Bool = false
     
+    
+    
     var body: some View {
         NavigationStack {
             // 1안
@@ -24,7 +26,9 @@ struct ProductDetailView: View {
             // 2안
             
             ScrollView {
+                
                 TabView {
+                    
                     Image("cartkeycap")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -37,6 +41,7 @@ struct ProductDetailView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 }
+                .padding(.top)
                 .tabViewStyle(PageTabViewStyle())
                 .scrollIndicators(.hidden)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))//.interactive로 바꿔야됨
@@ -106,6 +111,7 @@ struct ProductDetailView: View {
                             .font(.title3)
                             .padding()
                             .frame(maxWidth: .infinity)
+                            .foregroundColor(.white)
                     }
                     .buttonStyle(.borderedProminent)
                     .clipShape(Capsule())
@@ -166,10 +172,7 @@ struct ProductDetailView: View {
                     .presentationDetents([.fraction(0.3)])
                     .presentationDragIndicator(.visible)
             }
-            // sheet
-            // 옵션
-            // 갯수
-            // 배송비
+            
         }
     }
     

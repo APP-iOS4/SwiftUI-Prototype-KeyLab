@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ProductItemView: View {
     var product: Product
+    var isBool = ""
+    @State private var isDetailSheet = false
+    
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -47,11 +50,17 @@ struct ProductItemView: View {
             .padding([.horizontal, .bottom], 6)
             
             Spacer()
+        }.onTapGesture {
+            isDetailSheet.toggle()
         }
         .overlay {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(lineWidth: 0.1)
         }
+        
+        .sheet(isPresented: $isDetailSheet, content: {
+            ProductDetailView()
+        }).presentationDragIndicator(.visible)
     }
 }
 

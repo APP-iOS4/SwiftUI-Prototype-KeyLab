@@ -35,6 +35,7 @@
 		138A14B32B8504CB00EB67F6 /* CheckBoxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14B22B8504CB00EB67F6 /* CheckBoxToggle.swift */; };
 		8289E65D2B84A215004E0757 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289E65C2B84A215004E0757 /* MyPageView.swift */; };
 		8289E65F2B84A21B004E0757 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289E65E2B84A21B004E0757 /* SettingView.swift */; };
+		FE0AB6A82B86D3420004A650 /* ReviewSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0AB6A72B86D3420004A650 /* ReviewSubView.swift */; };
 		FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645D2B84319A0064059B /* AssemblyTotalView.swift */; };
 		FE8164602B8432BB0064059B /* AssemblyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */; };
 		FE8164652B8439C90064059B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8164642B8439C90064059B /* ProductCell.swift */; };
@@ -76,6 +77,7 @@
 		138A14B22B8504CB00EB67F6 /* CheckBoxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxToggle.swift; sourceTree = "<group>"; };
 		8289E65C2B84A215004E0757 /* MyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		8289E65E2B84A21B004E0757 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		FE0AB6A72B86D3420004A650 /* ReviewSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewSubView.swift; sourceTree = "<group>"; };
 		FE81645D2B84319A0064059B /* AssemblyTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyTotalView.swift; sourceTree = "<group>"; };
 		FE81645F2B8432BB0064059B /* AssemblyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyProgressView.swift; sourceTree = "<group>"; };
 		FE8164642B8439C90064059B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		0179EEE02B84A4CC008AEDEB /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				FE0AB6A72B86D3420004A650 /* ReviewSubView.swift */,
 				0179EEE12B84A4CC008AEDEB /* DetailView.swift */,
 				0179EEE22B84A4CC008AEDEB /* Review.swift */,
 				0179EEE32B84A4CC008AEDEB /* Model.swift */,
@@ -325,6 +328,7 @@
 				138A14B32B8504CB00EB67F6 /* CheckBoxToggle.swift in Sources */,
 				097E72982B849E3D00DDA747 /* LoginView.swift in Sources */,
 				138A14B12B85010800EB67F6 /* TotalCartView.swift in Sources */,
+				FE0AB6A82B86D3420004A650 /* ReviewSubView.swift in Sources */,
 				0179EEE52B84A4CC008AEDEB /* Review.swift in Sources */,
 				138A14AA2B84D20300EB67F6 /* ReviewHorizontalScrollView.swift in Sources */,
 				138A14A62B84C63400EB67F6 /* ComponentView.swift in Sources */,

@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct PurchaseSheetView: View {
+    
+    @State private var isShowingCartAlert: Bool = false
+    @State private var isShowingCartSheet: Bool = false
+    
     var body: some View {
         VStack {
             HStack {
@@ -44,7 +48,7 @@ struct PurchaseSheetView: View {
             }
             HStack {
                 Button{
-                    
+                    isShowingCartAlert.toggle()
                 } label: {
                     Text("장바구니")
                         .font(.title3)
@@ -62,6 +66,7 @@ struct PurchaseSheetView: View {
                         .font(.title3)
                         .frame(maxWidth: .infinity)
                         .padding([.top, .bottom], 10)
+                        .foregroundColor(.white)
                 }
                 .buttonStyle(.borderedProminent)
                 .clipShape(Capsule())
@@ -71,6 +76,26 @@ struct PurchaseSheetView: View {
             
         }
         .padding()
+        .sheet(isPresented: $isShowingCartSheet) {
+            TotalCartView()
+        }
+        
+        // sheet
+        // 옵션
+        // 갯수
+        // 배송비
+        .alert("장바구니로 이동하시겠습니까?", isPresented: $isShowingCartAlert) {
+            
+            Button("OK", action: {
+                isShowingCartAlert.toggle()
+                isShowingCartSheet.toggle()
+                //초기화하고 총 장바구니로 넘어가기
+            })
+            Button("Cancel", action: {
+                isShowingCartAlert.toggle()
+                //초기화하고 총 장바구니로 넘어가기
+            })
+        }
     }
         
 }

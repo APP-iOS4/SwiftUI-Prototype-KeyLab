@@ -24,7 +24,7 @@ struct Review: View {
                     Section {
                         ForEach(productList) { product in
                             NavigationLink {
-                                DetailView(item: reviewItems[0])
+                                ReviewSubView()
                             } label: {
                                 ProductItemView(product: product)
                             }

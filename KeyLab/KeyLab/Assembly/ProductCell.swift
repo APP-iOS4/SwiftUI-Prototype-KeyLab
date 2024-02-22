@@ -10,6 +10,8 @@ import SwiftUI
 struct ProductCell: View {
     @Binding var progressCount: Int
     @Binding var isSelected: Bool
+    @State private var isDetailSheet = false
+    
     var buttonAction: (() -> ())?
     
     var body: some View {
@@ -48,8 +50,10 @@ struct ProductCell: View {
                         buttonAction?()
                     }
                     .contextMenu(menuItems: {
-                        Text("상세보기_sheet")
-                        Text("찜하기")
+                        Button(action: { isDetailSheet.toggle()}, label: {
+                            Text("상세보기")
+                        })
+                        Text("찜하기(미구현)")
                     })
                     
                     if isSelected{
@@ -67,6 +71,9 @@ struct ProductCell: View {
                     .padding([.horizontal, .bottom], 8)
                     .font(.subheadline)
             }
+            .sheet(isPresented: $isDetailSheet, content: {
+                ProductDetailView()
+            })
         .foregroundColor(.mainorange)
             .frame(width: 150, height: 200)
     }
