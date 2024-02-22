@@ -10,6 +10,7 @@ import SwiftUI
 struct ComponentView: View {
     @State private var productList: [Product] = Product.mockData
     @State private var searchText: String = ""
+    @FocusState private var isTextFieldFocused: Bool
     
     var body: some View {
         NavigationView {
@@ -17,9 +18,10 @@ struct ComponentView: View {
                 VStack {
                     HStack(alignment: .center) {
                         TextField("검색하기", text: $searchText)
+                            .focused($isTextFieldFocused)
                         
                         Button("", systemImage: "magnifyingglass") {
-                            
+                            isTextFieldFocused = false
                         }
                         .tint(.mainorange)
                     }
@@ -31,14 +33,12 @@ struct ComponentView: View {
                     }
                     .padding([.horizontal, .bottom], 16)
                     
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(Color(.mainorange))
-                        
-                        Image("keyboard_example")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                    }
+                    Image("keyboard_example")
+                        .resizable()
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(lineWidth: 0.1)
+                        }
                     .frame(height: 200)
                     .padding(.horizontal, 16)
                     
@@ -76,6 +76,7 @@ struct ComponentView: View {
                     .tint(Color(.mainorange))
                 }
             }
+            .scrollDismissesKeyboard(.immediately)
         }
     }
 }
