@@ -23,12 +23,7 @@ struct Review: View {
                 ) {
                     Section {
                         ForEach(productList) { product in
-                            NavigationLink {
-                                ReviewSubView()
-                            } label: {
-                                ProductItemView(product: product)
-                            }
-                            .buttonStyle(.plain)
+                            ProductItemView(product: product, flag: "review")
                         }
                     } header: {
                         VStack(alignment: .trailing) {

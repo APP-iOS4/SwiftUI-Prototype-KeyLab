@@ -26,15 +26,20 @@ struct ReviewSubView: View {
                                 .frame(width: 400, height: 150) // 이미지 크기 조정
                         )
                     
-                    Circle()
-                        .fill(Color.white)
-                        .frame(width: 50, height: 50)
-                        .padding(10)
-                    
-                    Text("닉네임") // 텍스트 추가
-                        .font(.headline) // 텍스트 크기 지정
-                        .foregroundColor(.black) // 텍스트 색상 지정
-                        .offset(x: 75, y: 25) // 위치 조정
+                    HStack {
+                        Image(systemName: "person")
+                            .frame(width: 50, height: 50)
+                            .overlay {
+                                Circle()
+                                    .stroke()
+                            }
+                            .padding()
+                        
+                        Text("닉네임") // 텍스트 추가
+                            .font(.headline) // 텍스트 크기 지정
+                            .foregroundColor(.black) // 텍스트 색상 지정
+//                            .offset(x: 75, y: 25) // 위치 조정
+                    }
                     
                     VStack { // 여러 텍스트를 수직으로 배치하는 VStack 추가
                         Text("체리축, 흰색키캡, ABS하우징")

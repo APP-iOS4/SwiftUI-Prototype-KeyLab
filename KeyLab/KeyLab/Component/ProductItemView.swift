@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductItemView: View {
     var product: Product
-    var isBool = ""
+    var flag: String
     @State private var isDetailSheet = false
     
     
@@ -59,11 +59,15 @@ struct ProductItemView: View {
         }
         
         .sheet(isPresented: $isDetailSheet, content: {
-            ProductDetailView()
+            if flag == "component" {
+                ProductDetailView()
+            } else {
+                ReviewSubView()
+            }
         }).presentationDragIndicator(.visible)
     }
 }
 
 #Preview {
-    ProductItemView(product: Product.mockData[0])
+    ProductItemView(product: Product.mockData[0], flag: "component")
 }

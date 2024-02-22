@@ -49,7 +49,7 @@ struct ComponentView: View {
                     ) {
                         Section {
                             ForEach(productList) { product in
-                                ProductItemView(product: product)
+                                ProductItemView(product: product, flag: "component")
                             }
                             
                         } header: {
