@@ -10,6 +10,8 @@
 		0179EEE42B84A4CC008AEDEB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179EEE12B84A4CC008AEDEB /* DetailView.swift */; };
 		0179EEE52B84A4CC008AEDEB /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179EEE22B84A4CC008AEDEB /* Review.swift */; };
 		0179EEE62B84A4CC008AEDEB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179EEE32B84A4CC008AEDEB /* Model.swift */; };
+		096AD6F52B85DA7300C065F0 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AD6F42B85DA7300C065F0 /* ProductDetailView.swift */; };
+		096AD6F72B860FEB00C065F0 /* PurchaseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AD6F62B860FEB00C065F0 /* PurchaseSheetView.swift */; };
 		097E725D2B84292300DDA747 /* KeyLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E725C2B84292300DDA747 /* KeyLabApp.swift */; };
 		097E72612B84292500DDA747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72602B84292500DDA747 /* Assets.xcassets */; };
 		097E72652B84292500DDA747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E72642B84292500DDA747 /* Preview Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		0179EEE12B84A4CC008AEDEB /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		0179EEE22B84A4CC008AEDEB /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		0179EEE32B84A4CC008AEDEB /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		096AD6F42B85DA7300C065F0 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		096AD6F62B860FEB00C065F0 /* PurchaseSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSheetView.swift; sourceTree = "<group>"; };
 		097E72592B84292300DDA747 /* KeyLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097E725C2B84292300DDA747 /* KeyLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyLabApp.swift; sourceTree = "<group>"; };
 		097E72602B84292500DDA747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 				138A14A32B84C63400EB67F6 /* ProductItemView.swift */,
 				138A14A12B84C63400EB67F6 /* CategoryBadgeListView.swift */,
 				138A14A42B84C63400EB67F6 /* Product.swift */,
+				096AD6F42B85DA7300C065F0 /* ProductDetailView.swift */,
+				096AD6F62B860FEB00C065F0 /* PurchaseSheetView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 			files = (
 				FE81645E2B84319A0064059B /* AssemblyTotalView.swift in Sources */,
 				8289E65F2B84A21B004E0757 /* SettingView.swift in Sources */,
+				096AD6F52B85DA7300C065F0 /* ProductDetailView.swift in Sources */,
 				FE8164702B848B540064059B /* ProductFilter.swift in Sources */,
 				138A14AC2B84D20D00EB67F6 /* ProductDoubleLineGridView.swift in Sources */,
 				097E729A2B849E3D00DDA747 /* FirstOnboardingView.swift in Sources */,
@@ -307,6 +314,7 @@
 				FE81646C2B8449500064059B /* CartCell.swift in Sources */,
 				0179EEE42B84A4CC008AEDEB /* DetailView.swift in Sources */,
 				138A14A52B84C63400EB67F6 /* CategoryBadgeListView.swift in Sources */,
+				096AD6F72B860FEB00C065F0 /* PurchaseSheetView.swift in Sources */,
 				FE8164692B8444D50064059B /* AssemblyCartView.swift in Sources */,
 				138A14A82B84C63400EB67F6 /* Product.swift in Sources */,
 				097E72972B849E3D00DDA747 /* SecondOnboardingView.swift in Sources */,
