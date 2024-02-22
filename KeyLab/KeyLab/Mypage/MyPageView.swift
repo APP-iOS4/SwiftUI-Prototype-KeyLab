@@ -55,9 +55,11 @@ struct MyPageView: View {
                                     Text("찜")
                                 }.padding(.horizontal,5)
                                 VStack {
-                                    Button(action: {}, label: {
+                                    NavigationLink {
+                                        MyReviewView()
+                                    } label: {
                                         Image(systemName: "text.bubble")
-                                    })
+                                    }
                                     .font(.system(size: 28))
                                     Text("후기")
                                 }

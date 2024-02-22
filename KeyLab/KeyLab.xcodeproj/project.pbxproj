@@ -26,6 +26,7 @@
 		09B979B82B87118200D23124 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979B72B87118200D23124 /* OrderView.swift */; };
 		09B979BA2B87143C00D23124 /* ShipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979B92B87143C00D23124 /* ShipmentView.swift */; };
 		09B979BC2B87157800D23124 /* GongJiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979BB2B87157800D23124 /* GongJiView.swift */; };
+		09B979BE2B871E4F00D23124 /* MyReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979BD2B871E4F00D23124 /* MyReviewView.swift */; };
 		138A149F2B84C62C00EB67F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A149E2B84C62C00EB67F6 /* HomeView.swift */; };
 		138A14A52B84C63400EB67F6 /* CategoryBadgeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14A12B84C63400EB67F6 /* CategoryBadgeListView.swift */; };
 		138A14A62B84C63400EB67F6 /* ComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A14A22B84C63400EB67F6 /* ComponentView.swift */; };
@@ -70,6 +71,7 @@
 		09B979B72B87118200D23124 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		09B979B92B87143C00D23124 /* ShipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentView.swift; sourceTree = "<group>"; };
 		09B979BB2B87157800D23124 /* GongJiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GongJiView.swift; sourceTree = "<group>"; };
+		09B979BD2B871E4F00D23124 /* MyReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewView.swift; sourceTree = "<group>"; };
 		138A149E2B84C62C00EB67F6 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		138A14A12B84C63400EB67F6 /* CategoryBadgeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBadgeListView.swift; sourceTree = "<group>"; };
 		138A14A22B84C63400EB67F6 /* ComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				8289E65C2B84A215004E0757 /* MyPageView.swift */,
+				09B979BD2B871E4F00D23124 /* MyReviewView.swift */,
 				09B979BB2B87157800D23124 /* GongJiView.swift */,
 				09B979B72B87118200D23124 /* OrderView.swift */,
 				09B979B92B87143C00D23124 /* ShipmentView.swift */,
@@ -344,6 +347,7 @@
 				097E725D2B84292300DDA747 /* KeyLabApp.swift in Sources */,
 				138A149F2B84C62C00EB67F6 /* HomeView.swift in Sources */,
 				FE81646E2B8469DD0064059B /* AssemblyCategoryBar.swift in Sources */,
+				09B979BE2B871E4F00D23124 /* MyReviewView.swift in Sources */,
 				8289E65D2B84A215004E0757 /* MyPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
