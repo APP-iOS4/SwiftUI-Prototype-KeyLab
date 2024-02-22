@@ -79,7 +79,6 @@
  7. 홈 및 부품 페이지의 상단 장바구니로 이동 후 구매하기 상세페이지(미구현)
  8. 결제 완료(미구현)
 
-<br>
 
 ### 부품 개별 구매 시나리오
  1. 온보딩 페이지에서 우로 스크롤 / 로그인 버튼 선택
@@ -92,15 +91,25 @@
 <br>
 
 ## 📱 실행화면
-| 온보딩 | 로그인 | 홈 | 조립탭 | 제품 상세 페이지 | 
-| ---- | ---- | --- | --- | --- |
-| ![온보딩](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/b827a87e-5e89-46f8-974e-8da50df5fbb9) | ![로그인](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/485a1ab0-060a-44d7-8380-110c34e2b7cf) | ![홈](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/c3af9031-db5a-41fe-aaa8-8182c8b6031f) | ![조립](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/374d5f5c-4d8e-4a47-9f45-36debd44a59b) | ![제품상세페이지](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/6d1617f0-f32d-4a29-97c6-b2ae0c602f26) |
+| 온보딩 | 로그인 | 
+| ---- | ---- | 
+| ![온보딩](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/b827a87e-5e89-46f8-974e-8da50df5fbb9) | ![로그인](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/485a1ab0-060a-44d7-8380-110c34e2b7cf) 
 
-<br>
+| 홈 |
+| --- |
+| ![홈](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/c3af9031-db5a-41fe-aaa8-8182c8b6031f) |
 
-| 부품탭 | 리뷰탭 | 리뷰 상세 페이지 | 마이페이지 | 
-|:---:|:---:|:---:|:---:|
-| ![부품](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/9b01128a-e5ed-4d73-9561-0d16f6c068c6) | ![리뷰](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/972f2bad-ac62-49a8-8e1a-e21fcb9d8498) | ![후기상세페이지](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/b816bfef-0b85-4c7f-86f6-38af0a32a035) | ![마이페이지](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/eba169a7-1740-41ed-9cf5-11dda502987f) |
+| 조립탭 | 부품탭 | 제품 상세 페이지 | 
+| --- | --- | --- |
+| ![조립](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/374d5f5c-4d8e-4a47-9f45-36debd44a59b) | ![부품](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/9b01128a-e5ed-4d73-9561-0d16f6c068c6) | ![제품상세페이지](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/6d1617f0-f32d-4a29-97c6-b2ae0c602f26) |
+
+| 리뷰탭 | 리뷰 상세 페이지 |
+|:---:|:---:|
+| ![리뷰](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/972f2bad-ac62-49a8-8e1a-e21fcb9d8498) | ![후기상세페이지](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/b816bfef-0b85-4c7f-86f6-38af0a32a035) | 
+
+| 마이페이지 | 
+| ------- |
+| ![마이페이지](https://github.com/APP-iOS4/SwiftUI-Prototype-KeyLab/assets/76551806/eba169a7-1740-41ed-9cf5-11dda502987f) |
 
 <br>
 
