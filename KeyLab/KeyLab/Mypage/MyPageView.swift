@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct MyPageView: View {
+    
+    @State private var pushAlarmToggle: Bool = false
+    @State private var SMSAlarmToggle: Bool = false
+    @State private var emailAlarmToggle: Bool = false
+    @State private var logOutAlert = false
+    @State private var cacheClearAlert = false
+    @State var navigateLogin = false
+
+
+    
     var userName:String = "하세기"
     var userTier = Image(systemName:"b.circle")
-    let recentData = Array(1...20).map { "\($0)"}
-    let recentColumns = [
-        GridItem(.flexible(maximum: 155)),
-        GridItem(.flexible(maximum: 160))
-    ]
     
     var body: some View {
-            NavigationView {
+        NavigationView {
+            
+            ScrollView{
                 VStack {
                     HStack {
                         Image(systemName:"person.circle.fill")
@@ -109,26 +116,74 @@ struct MyPageView: View {
                         .padding(.trailing, 40)
                     }
                     Spacer()
-                    Text("최근 본 상품")
-                        .font(.system(size: 20, weight: .semibold))
                     
-                    ScrollView {
-                        LazyVGrid(columns: recentColumns,  spacing: 15) {
-                            ForEach(recentData, id: \.self) {i in
-                                //VStack으로 도형추가
-                                VStack {
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .fill(Color.white)
-                                        .frame(width: 150, height: 150)
-                                        .shadow(radius: 5)
-                                        .padding(.horizontal, 30)
-                                    
-                                    
-                                }
-                            }
+                    VStack(alignment: .leading) {
+                        NavigationLink(destination: secondView(index: 1)) {
+                            Text("공지사항")
                         }
-                        .padding(.horizontal)
+                        .padding()
+                        
+                        NavigationLink(destination: secondView(index: 2)) {
+                            Text("계정 관리")
+                        }
+                        .padding()
+                        
+                        Toggle(isOn: $pushAlarmToggle, label: {
+                            Text("앱 푸시 알림")
+                        })
+                        .padding()
+                        
+                        Toggle(isOn: $SMSAlarmToggle, label: {
+                            Text("SMS 알림")
+                        })
+                        .padding()
+                        .padding(.vertical, -30)
+                        
+                        Toggle(isOn: $emailAlarmToggle, label: {
+                            Text("이메일 알림")
+                        })
+                        .padding()
+                        
+                        Button(action: {}, label: {
+                            Text("개인정보 처리 방침")
+                        })
+                        .padding()
+                        
+                        Button(action: {self.cacheClearAlert = true}, label: {
+                            Text("캐시 삭제")
+                                .foregroundStyle(.red)
+                        })
+                        .alert("", isPresented: $cacheClearAlert) {
+                            Button("Ok", role: .destructive) {}
+                        }
+                        
+                        
+                    message: {
+                            Text("임시로 저장된 데이터를 삭제하여 저장공간을 확보하시겠습니까?")
+                        }
+                    .padding()
+                        
+                        
+                        
+                        Button(action: {self.logOutAlert = true}, label: {
+                            Text("로그아웃")
+                                .foregroundStyle(.red)
+                        })
+                        .alert("", isPresented: $logOutAlert) {
+                            Button("Ok", role: .destructive) {}
+                        }
+                        
+                    message: {
+                            Text("로그아웃 하시겠습니까?")
+                        }
+                        
+                        .padding()
+                    
                     }
+                    .padding()
+                    
+                   
+                    
                     
                 }
                 .padding(.top, 16)
@@ -145,15 +200,24 @@ struct MyPageView: View {
                             
                         } label: {
                             Image(systemName: "gearshape")
-//                                .font(.title3)
+                            //                                .font(.title3)
                                 .padding(.top, 10)
                         }
                         .tint(Color(.mainorange))
                     }
                 }
             }
+        }
     }
 }
+func secondView(index: Int) -> some View {
+    var body: some View {
+        Text("\(index)")
+    }
+    
+    return body
+}
+
 #Preview {
     NavigationStack {
         MyPageView()
