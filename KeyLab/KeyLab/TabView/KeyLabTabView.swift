@@ -44,6 +44,7 @@ struct KeyLabTabView: View {
                     }
             }
             .tint(.mainorange)
+            .toolbar(.hidden)
     }
 }
 
