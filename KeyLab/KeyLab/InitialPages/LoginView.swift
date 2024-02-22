@@ -17,7 +17,8 @@ struct LoginView: View {
     
     
     var body: some View {
-//        NavigationStack {
+
+        ScrollView {
             VStack(alignment: .leading) {
                 Text("ID")
                 TextField("  id입력", text: $idLabel)
@@ -27,6 +28,7 @@ struct LoginView: View {
                     .overlay {
                         RoundedRectangle(cornerRadius: 25.0)
                             .stroke(isFocusedID ? Color.mainorange : Color.gray)
+                        
                     }
             }
             .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
@@ -45,15 +47,15 @@ struct LoginView: View {
             .padding(EdgeInsets(top: 20, leading: 30, bottom: 0, trailing: 30))
             HStack {
                 Toggle(isOn: $isOnID) {}
-                .toggleStyle(CheckboxToggleStyle())
-                .frame(maxWidth: 24)
+                    .toggleStyle(CheckboxToggleStyle())
+                    .frame(maxWidth: 24)
                 Text("아이디 저장")
                 
                 Spacer()
                 
                 Toggle(isOn: $isOnAutoLogin) {}
-                .toggleStyle(CheckboxToggleStyle())
-                .frame(maxWidth: 24)
+                    .toggleStyle(CheckboxToggleStyle())
+                    .frame(maxWidth: 24)
                 Text("자동 로그인")
             }
             .padding(EdgeInsets(top: 5, leading: 30, bottom: 0, trailing: 100))
@@ -122,13 +124,16 @@ struct LoginView: View {
                         Text("회원가입")
                     }
                     .foregroundStyle(.gray)
-
+                    
                 }
                 
             }
-            
-//        }
-        .navigationTitle("로그인")
+            .navigationTitle("로그인")
+        }
+        .onTapGesture {
+            isFocusedID = false
+            isFocusedPW = false
+        }
     }
 }
 
@@ -147,6 +152,12 @@ struct CheckboxToggleStyle: ToggleStyle {
                     configuration.isOn.toggle()
                 }
         }
+    }
+}
+ 
+extension UIApplication: UIGestureRecognizerDelegate {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return false
     }
 }
 

@@ -21,6 +21,9 @@ struct ProductList: View {
                             boolArray[i] = false
                         }
                     }
+                    .onTapGesture {
+                        boolArray[index].toggle()
+                    }
                 }
             }
             .padding(.horizontal, 16)
